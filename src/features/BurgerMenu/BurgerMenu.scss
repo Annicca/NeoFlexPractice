@@ -1,0 +1,7 @@
+.nav-burger {
+  display: none;
+
+  @include media-tablet() {
+    display: block;
+  }
+}

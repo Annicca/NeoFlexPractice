@@ -1,0 +1,12 @@
+* {
+  box-sizing: border-box;
+  @include font-styles;
+
+  @include media-mobile {
+    @include font-styles-ubuntu(var(--font-14), null, var(--line-height-16));
+  }
+}
+
+html {
+  background-color: var(--main-color);
+}

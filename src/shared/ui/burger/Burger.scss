@@ -1,0 +1,49 @@
+.burger {
+  position: relative;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  z-index: 2;
+
+  &__item {
+    position: relative;
+    width: 2rem;
+    height: 2px;
+    border-radius: 10px;
+    transition: all 0.3s linear;
+    transform-origin: 1px;
+    background-color: var(--black1E);
+
+    transform: translateX(0);
+
+    &:first-child {
+      transform: rotate(0);
+    }
+
+    &:last-child {
+      transform: rotate(0);
+    }
+  }
+}
+
+.burger_open {
+  .burger__item {
+    opacity: 0;
+    transform: translateX(-20px);
+
+    &:first-child,
+    &:last-child {
+      opacity: 1;
+    }
+
+    &:first-child {
+      transform: rotate(45deg);
+    }
+
+    &:last-child {
+      transform: rotate(-45deg);
+    }
+  }
+}
