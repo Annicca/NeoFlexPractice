@@ -1,20 +1,29 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
 const libImport = '@import "/src/app/styles/mixins/index.scss";';
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
-  entry: "./src/app/index.tsx",
+  entry: ["./src/app/index.scss", "./src/app/index.tsx"],
   mode: "development",
   output: {
     filename: "bundle.[fullhash].js",
     path: path.resolve(__dirname, "dist"),
+    assetModuleFilename: path.join("assets", "[name].[contenthash][ext]"),
   },
   devServer: {
+    static: {
+      directory: path.join(__dirname, "dist"),
+    },
+    compress: true,
     port: 3000,
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "./src/app/index.html",
+      template: path.join(__dirname, "src", "app", "index.html"),
+    }),
+    new MiniCssExtractPlugin({
+      filename: "[name].[contenthash].css",
     }),
   ],
   resolve: {
@@ -42,39 +51,33 @@ module.exports = {
         ],
       },
       {
-        test: /\.s[ac]ss$/i,
+        test: /\.s[a|c]ss$/i,
         use: [
-          "style-loader",
+          MiniCssExtractPlugin.loader,
+          ,
           "css-loader",
-          {
-            loader: "postcss-loader",
-          },
+          "postcss-loader",
           "sass-loader",
           "webpack-append?" + libImport,
         ],
       },
       {
-        test: /\.(png|svg|jpg|gif|webp)$/,
-        exclude: /node_modules/,
-        use: [
-          {
-            loader: "file-loader",
-            options: {
-              name: "[name].[ext]",
-            },
-          },
-        ],
+        test: /\.(png|jpg|jpeg|gif)$/i,
+        type: "asset/resource",
+      },
+      {
+        test: /\.svg$/,
+        type: "asset/resource",
+        generator: {
+          filename: path.join("icons", "[name].[contenthash][ext]"),
+        },
       },
       {
         test: /\.(woff(2)?|ttf|eot|svg)$/,
-        use: [
-          {
-            loader: "file-loader",
-            options: {
-              name: "[name].[ext]",
-            },
-          },
-        ],
+        type: "asset/resource",
+        generator: {
+          filename: path.join("assets/fonts", "[name].[contenthash][ext]"),
+        },
       },
     ],
   },

@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  src: url("/src/shared/assets/fonts/Ubuntu/Ubuntu-Bold.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  src: url("/src/shared/assets/fonts/Ubuntu/Ubuntu-Medium.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Nunito Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  src: url("/src/shared/assets/fonts/NunitoSans/NunitoSans-Regular.ttf")
+    format("ttf");
+}

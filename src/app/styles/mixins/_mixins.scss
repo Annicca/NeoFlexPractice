@@ -3,8 +3,10 @@ $desktop: 1300px;
 $tablet: 920px;
 $mobile: 500px;
 
+$font-ubuntu: "Ubuntu", sans-serif;
+
 @mixin font-styles(
-  $font-family: var(--font-ubuntu),
+  $font-family: $font-ubuntu,
   $font-weight: var(--bold),
   $font-size: var(--font-16),
   $color: var(--black1E),

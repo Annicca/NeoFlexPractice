@@ -1,3 +1,9 @@
+import { EmailSubscribe } from "widgets";
+
 export const HomePage = () => {
-  return <div>Home</div>;
+  return (
+    <main>
+      <EmailSubscribe />
+    </main>
+  );
 };

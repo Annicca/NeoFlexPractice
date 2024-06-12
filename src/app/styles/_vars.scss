@@ -1,6 +1,8 @@
 :root {
   //colors
   --blue: #003cff;
+  --indigo: #686df1;
+  --indigo-light: #9b9eee;
   --white: #fff;
   --white-opacity: #ffffffcf;
   --main-color: #f5f4ff;
@@ -8,13 +10,18 @@
   --blue-gray: #7796c0;
   --black: #000;
   --black1E: #1c1c1e;
+  --black1C: #1c1c1c;
   --black29: #1d1929;
   --brown: #b2a35f;
+  --orange: #eb801d;
   --gray: #b2b2b233;
   --gray48: #2d3748;
+  --grayB0: #9092b0;
+  --shadow: #363a781a;
 
   //fonts
   --font-ubuntu: "Ubuntu", sans-serif;
+  --font-nunito: "Nunito Sans", sans-serif;
 
   //font-size
   --font-14: 14px;
@@ -25,7 +32,7 @@
 
   //font-weight
   --bold: 700;
-  --medium: 600;
+  --medium: 500;
   --regular: 400;
 
   //line-height
@@ -34,7 +41,10 @@
   --line-height-22: 22px;
   --line-height-24: 24px;
   --line-height-27: 27px;
+  --line-height-30: 30px;
+  --line-height-36: 36px;
   --line-height-44: 44px;
+  --line-height-50: 50px;
 
   //letter-spacing
   --letter-spacing-2: 0.02;

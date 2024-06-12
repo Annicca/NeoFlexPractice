@@ -157,6 +157,10 @@ img {
  * 2. Remove the margin in Firefox and Safari.
  */
 
+form {
+  margin: 0;
+}
+
 button,
 input,
 optgroup,
@@ -176,6 +180,7 @@ textarea {
 button,
 input {
   /* 1 */
+  border: none;
   overflow: visible;
   outline: none;
 }
