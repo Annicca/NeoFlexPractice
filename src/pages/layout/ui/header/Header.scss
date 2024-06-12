@@ -1,11 +1,7 @@
 .header {
-  // position: relative;
-  // max-width: 100%;
   padding: 7px 0;
   @include flex-container;
   flex-wrap: wrap;
-  // overflow: hidden;
-
   &__menu {
     @include flex-container;
     justify-content: flex-end;

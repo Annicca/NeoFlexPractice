@@ -1,0 +1,121 @@
+.footer {
+  padding: 96px 0 92px;
+  background-color: var(--gray);
+  @include font-styles-ubuntu(
+    var(--font-16),
+    var(--gray48),
+    var(--line-height-24),
+    var(--letter-spacing-2),
+    var(--medium)
+  );
+
+  @include media-tablet {
+    padding: 40px 0;
+  }
+
+  @include media-mobile {
+    font-size: var(font-14);
+    line-height: var(--line-height-18);
+  }
+
+  &__inner {
+    padding: 0;
+    display: grid;
+    grid-template-areas:
+      "logo contact"
+      "links links"
+      "cookie cookie";
+    row-gap: 30px;
+
+    @include media-tablet {
+      grid-template-areas:
+        "logo"
+        "contact"
+        "links"
+        "cookie";
+    }
+  }
+
+  &__contact {
+    grid-area: contact;
+    @include flex-container;
+    justify-content: flex-end;
+
+    @include media-tablet {
+      justify-content: center;
+    }
+  }
+
+  &__contact-inner {
+    max-width: fit-content;
+    @include flex-container-column;
+    row-gap: 8px;
+  }
+
+  &__logo {
+    grid-area: logo;
+    @include media-tablet {
+      margin: 0 auto;
+    }
+  }
+
+  &__tel {
+    @include font-styles-ubuntu(
+      var(--font-30),
+      var(--black),
+      var(--line-height-44),
+      normal
+    );
+
+    @include media-mobile {
+      @include font-styles-ubuntu(
+        var(--font-20),
+        var(--black),
+        var(--line-height-22)
+      );
+    }
+  }
+
+  &__email,
+  &__tel {
+    &:hover {
+      color: var(--blue-gray);
+    }
+  }
+
+  &__email,
+  &__tel,
+  &__link {
+    transition: color 0.3s ease-in-out;
+  }
+
+  &__email {
+    text-align: left;
+
+    @include media-tablet {
+      text-align: center;
+    }
+  }
+
+  &__link {
+    color: var(--black);
+    &:hover {
+      color: var(--brown);
+    }
+  }
+
+  &__links {
+    grid-area: links;
+    @include flex-container-start();
+    column-gap: 3%;
+    row-gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  &__cookie {
+    grid-area: cookie;
+    text-align: left;
+    padding-top: 30px;
+    border-top: 2px solid var(--white-opacity);
+  }
+}

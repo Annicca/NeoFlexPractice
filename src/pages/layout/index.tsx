@@ -1,6 +1,7 @@
 import { FC } from "react";
 import { Outlet } from "react-router";
 import { Header } from "./ui";
+import { Footer } from "./ui/footer/Footer";
 
 import "./index.scss";
 
@@ -13,7 +14,7 @@ export const Layout: FC = () => {
           <Outlet />
         </main>
       </div>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };

@@ -38,6 +38,11 @@ $mobile: 500px;
   justify-content: space-between;
   align-items: center;
 }
+@mixin flex-container-start {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
 @mixin flex-container-center {
   display: flex;
   justify-content: center;

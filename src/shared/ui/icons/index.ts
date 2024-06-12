@@ -1,0 +1,1 @@
+export { LogoNeoflex } from "./logoNeoFlex";

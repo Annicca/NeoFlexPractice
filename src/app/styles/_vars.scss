@@ -2,12 +2,16 @@
   //colors
   --blue: #003cff;
   --white: #fff;
+  --white-opacity: #ffffffcf;
   --main-color: #f5f4ff;
   --pink: #b4387a;
   --blue-gray: #7796c0;
+  --black: #000;
   --black1E: #1c1c1e;
   --black29: #1d1929;
   --brown: #b2a35f;
+  --gray: #b2b2b233;
+  --gray48: #2d3748;
 
   //fonts
   --font-ubuntu: "Ubuntu", sans-serif;
@@ -17,18 +21,21 @@
   --font-16: 16px;
   --font-20: 20px;
   --font-24: 24px;
+  --font-30: 30px;
 
   //font-weight
   --bold: 700;
-  --medium: 500;
+  --medium: 600;
   --regular: 400;
 
   //line-height
   --line-height-16: 16px;
   --line-height-18: 18px;
   --line-height-22: 22px;
+  --line-height-24: 24px;
   --line-height-27: 27px;
+  --line-height-44: 44px;
 
   //letter-spacing
-  --letter-spacing-2: 0.02em;
+  --letter-spacing-2: 0.02;
 }

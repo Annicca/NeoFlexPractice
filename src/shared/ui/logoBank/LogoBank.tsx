@@ -1,5 +1,10 @@
+import { Link } from "react-router-dom";
 import "./LogoBank.scss";
 
 export const LogoBank = () => {
-  return <div className="logo-bank">NeoBank</div>;
+  return (
+    <Link to="/" className="logo-bank">
+      NeoBank
+    </Link>
+  );
 };
