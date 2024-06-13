@@ -1,6 +1,6 @@
 import { FC } from "react";
+import { GetNewsForm } from "features";
 import "./EmailSubscribe.scss";
-import { GetNewsForm } from "features/GetNewsForm/GetNewsForm";
 
 export const EmailSubscribe: FC = () => {
   return (

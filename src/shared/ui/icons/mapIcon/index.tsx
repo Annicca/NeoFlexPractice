@@ -23,7 +23,7 @@ export const MapIcon: FC<TIcon> = ({ className }) => {
         r="7.8878"
         fill="white"
         stroke="#F53838"
-        stroke-width="1.48121"
+        strokeWidth="1.48121"
       />
       <circle cx="823.504" cy="363.143" r="3.78207" fill="#F53838" />
       <g filter="url(#filter1_d_93_3794)">
@@ -35,7 +35,7 @@ export const MapIcon: FC<TIcon> = ({ className }) => {
         r="13.3244"
         fill="white"
         stroke="#F53838"
-        stroke-width="2.50213"
+        strokeWidth="2.50213"
       />
       <circle cx="859.658" cy="426.044" r="6.38884" fill="#F53838" />
       <g filter="url(#filter2_d_93_3794)">
@@ -47,7 +47,7 @@ export const MapIcon: FC<TIcon> = ({ className }) => {
         r="13.821"
         fill="white"
         stroke="#F53838"
-        stroke-width="2.59537"
+        strokeWidth="2.59537"
       />
       <circle cx="575.656" cy="400.419" r="6.62692" fill="#F53838" />
       <g filter="url(#filter3_d_93_3794)">
@@ -59,7 +59,7 @@ export const MapIcon: FC<TIcon> = ({ className }) => {
         r="9.63949"
         fill="white"
         stroke="#F53838"
-        stroke-width="1.81015"
+        strokeWidth="1.81015"
       />
       <circle cx="486.905" cy="281.698" r="4.62197" fill="#F53838" />
       <g filter="url(#filter4_d_93_3794)">
@@ -71,7 +71,7 @@ export const MapIcon: FC<TIcon> = ({ className }) => {
         r="16.3214"
         fill="white"
         stroke="#F53838"
-        stroke-width="3.06492"
+        strokeWidth="3.06492"
       />
       <circle cx="586.201" cy="299.134" r="7.82584" fill="#F53838" />
       <g filter="url(#filter5_d_93_3794)">
@@ -83,7 +83,7 @@ export const MapIcon: FC<TIcon> = ({ className }) => {
         r="13.2872"
         fill="white"
         stroke="#F53838"
-        stroke-width="2.49515"
+        strokeWidth="2.49515"
       />
       <circle cx="734.119" cy="258.342" r="6.37101" fill="#F53838" />
       <g filter="url(#filter6_d_93_3794)">
@@ -95,7 +95,7 @@ export const MapIcon: FC<TIcon> = ({ className }) => {
         r="9.63949"
         fill="white"
         stroke="#F53838"
-        stroke-width="1.81015"
+        strokeWidth="1.81015"
       />
       <circle cx="1005" cy="97.1701" r="4.62197" fill="#F53838" />
       <g filter="url(#filter7_d_93_3794)">
@@ -107,7 +107,7 @@ export const MapIcon: FC<TIcon> = ({ className }) => {
         r="16.296"
         fill="white"
         stroke="#F53838"
-        stroke-width="3.06015"
+        strokeWidth="3.06015"
       />
       <circle cx="778.132" cy="153.007" r="7.81367" fill="#F53838" />
       <g filter="url(#filter8_d_93_3794)">
@@ -119,7 +119,7 @@ export const MapIcon: FC<TIcon> = ({ className }) => {
         r="12.7064"
         fill="white"
         stroke="#F53838"
-        stroke-width="2.38607"
+        strokeWidth="2.38607"
       />
       <circle cx="672.5" cy="131.347" r="6.09249" fill="#F53838" />
       <g filter="url(#filter9_d_93_3794)">
@@ -131,7 +131,7 @@ export const MapIcon: FC<TIcon> = ({ className }) => {
         r="12.9188"
         fill="white"
         stroke="#F53838"
-        stroke-width="2.42596"
+        strokeWidth="2.42596"
       />
       <circle cx="573.604" cy="177.664" r="6.19436" fill="#F53838" />
       <g filter="url(#filter10_d_93_3794)">
@@ -143,7 +143,7 @@ export const MapIcon: FC<TIcon> = ({ className }) => {
         r="9.63949"
         fill="white"
         stroke="#F53838"
-        stroke-width="1.81015"
+        strokeWidth="1.81015"
       />
       <circle cx="530" cy="116.235" r="4.62197" fill="#F53838" />
       <g filter="url(#filter11_d_93_3794)">
@@ -155,7 +155,7 @@ export const MapIcon: FC<TIcon> = ({ className }) => {
         r="7.94908"
         fill="white"
         stroke="#F53838"
-        stroke-width="1.49272"
+        strokeWidth="1.49272"
       />
       <circle cx="429.016" cy="27.21" r="3.81145" fill="#F53838" />
       <g filter="url(#filter12_d_93_3794)">
@@ -167,7 +167,7 @@ export const MapIcon: FC<TIcon> = ({ className }) => {
         r="5.74726"
         fill="white"
         stroke="#F53838"
-        stroke-width="1.07925"
+        strokeWidth="1.07925"
       />
       <circle cx="367.159" cy="105.691" r="2.75571" fill="#F53838" />
       <g filter="url(#filter13_d_93_3794)">
@@ -179,7 +179,7 @@ export const MapIcon: FC<TIcon> = ({ className }) => {
         r="5.74726"
         fill="white"
         stroke="#F53838"
-        stroke-width="1.07925"
+        strokeWidth="1.07925"
       />
       <circle cx="741.758" cy="82.9714" r="2.75571" fill="#F53838" />
       <g filter="url(#filter14_d_93_3794)">
@@ -191,7 +191,7 @@ export const MapIcon: FC<TIcon> = ({ className }) => {
         r="9.63949"
         fill="white"
         stroke="#F53838"
-        stroke-width="1.81015"
+        strokeWidth="1.81015"
       />
       <circle cx="365.048" cy="40.0229" r="4.62197" fill="#F53838" />
       <g filter="url(#filter15_d_93_3794)">
@@ -203,7 +203,7 @@ export const MapIcon: FC<TIcon> = ({ className }) => {
         r="7.35487"
         fill="white"
         stroke="#F53838"
-        stroke-width="1.38113"
+        strokeWidth="1.38113"
       />
       <circle cx="279.687" cy="9.77617" r="3.52653" fill="#F53838" />
       <g filter="url(#filter16_d_93_3794)">
@@ -215,7 +215,7 @@ export const MapIcon: FC<TIcon> = ({ className }) => {
         r="7.35487"
         fill="white"
         stroke="#F53838"
-        stroke-width="1.38113"
+        strokeWidth="1.38113"
       />
       <circle cx="877.369" cy="102.654" r="3.52653" fill="#F53838" />
       <g filter="url(#filter17_d_93_3794)">
@@ -227,7 +227,7 @@ export const MapIcon: FC<TIcon> = ({ className }) => {
         r="7.35487"
         fill="white"
         stroke="#F53838"
-        stroke-width="1.38113"
+        strokeWidth="1.38113"
       />
       <circle cx="807.838" cy="227.411" r="3.52653" fill="#F53838" />
       <g filter="url(#filter18_d_93_3794)">
@@ -239,7 +239,7 @@ export const MapIcon: FC<TIcon> = ({ className }) => {
         r="9.63949"
         fill="white"
         stroke="#F53838"
-        stroke-width="1.81015"
+        strokeWidth="1.81015"
       />
       <circle cx="292.5" cy="148.384" r="4.62197" fill="#F53838" />
       <g filter="url(#filter19_d_93_3794)">
@@ -251,7 +251,7 @@ export const MapIcon: FC<TIcon> = ({ className }) => {
         r="9.63949"
         fill="white"
         stroke="#F53838"
-        stroke-width="1.81015"
+        strokeWidth="1.81015"
       />
       <circle cx="305.312" cy="454.393" r="4.62197" fill="#F53838" />
       <g filter="url(#filter20_d_93_3794)">
@@ -263,7 +263,7 @@ export const MapIcon: FC<TIcon> = ({ className }) => {
         r="13.1166"
         fill="white"
         stroke="#F53838"
-        stroke-width="2.46311"
+        strokeWidth="2.46311"
       />
       <circle cx="333.291" cy="382.985" r="6.2892" fill="#F53838" />
       <g filter="url(#filter21_d_93_3794)">
@@ -275,7 +275,7 @@ export const MapIcon: FC<TIcon> = ({ className }) => {
         r="6.38609"
         fill="white"
         stroke="#F53838"
-        stroke-width="1.19921"
+        strokeWidth="1.19921"
       />
       <circle cx="377.861" cy="371.771" r="3.06202" fill="#F53838" />
       <g filter="url(#filter22_d_93_3794)">
@@ -287,7 +287,7 @@ export const MapIcon: FC<TIcon> = ({ className }) => {
         r="9.63949"
         fill="white"
         stroke="#F53838"
-        stroke-width="1.81015"
+        strokeWidth="1.81015"
       />
       <circle cx="291.836" cy="329.8" r="4.62197" fill="#F53838" />
       <g filter="url(#filter23_d_93_3794)">
@@ -299,7 +299,7 @@ export const MapIcon: FC<TIcon> = ({ className }) => {
         r="6.40659"
         fill="white"
         stroke="#F53838"
-        stroke-width="1.20306"
+        strokeWidth="1.20306"
       />
       <circle cx="44.0113" cy="103.462" r="3.07185" fill="#F53838" />
       <g filter="url(#filter24_d_93_3794)">
@@ -311,7 +311,7 @@ export const MapIcon: FC<TIcon> = ({ className }) => {
         r="9.63949"
         fill="white"
         stroke="#F53838"
-        stroke-width="1.81015"
+        strokeWidth="1.81015"
       />
       <circle cx="207.728" cy="106.495" r="4.62197" fill="#F53838" />
       <g filter="url(#filter25_d_93_3794)">
@@ -323,7 +323,7 @@ export const MapIcon: FC<TIcon> = ({ className }) => {
         r="9.63949"
         fill="white"
         stroke="#F53838"
-        stroke-width="1.81015"
+        strokeWidth="1.81015"
       />
       <circle cx="131.498" cy="97.1696" r="4.62197" fill="#F53838" />
       <g filter="url(#filter26_d_93_3794)">
@@ -335,7 +335,7 @@ export const MapIcon: FC<TIcon> = ({ className }) => {
         r="14.0949"
         fill="white"
         stroke="#F53838"
-        stroke-width="2.64681"
+        strokeWidth="2.64681"
       />
       <circle cx="178.449" cy="161.197" r="6.75825" fill="#F53838" />
       <g filter="url(#filter27_d_93_3794)">
@@ -347,7 +347,7 @@ export const MapIcon: FC<TIcon> = ({ className }) => {
         r="7.98284"
         fill="white"
         stroke="#F53838"
-        stroke-width="1.49906"
+        strokeWidth="1.49906"
       />
       <circle cx="198.996" cy="247.797" r="3.82764" fill="#F53838" />
       <g filter="url(#filter28_d_93_3794)">
@@ -359,7 +359,7 @@ export const MapIcon: FC<TIcon> = ({ className }) => {
         r="8.48018"
         fill="white"
         stroke="#F53838"
-        stroke-width="1.59245"
+        strokeWidth="1.59245"
       />
       <circle cx="252.832" cy="214.307" r="4.0661" fill="#F53838" />
       <g filter="url(#filter29_d_93_3794)">
@@ -371,7 +371,7 @@ export const MapIcon: FC<TIcon> = ({ className }) => {
         r="7.34803"
         fill="white"
         stroke="#F53838"
-        stroke-width="1.37985"
+        strokeWidth="1.37985"
       />
       <circle cx="929.422" cy="446.355" r="3.52325" fill="#F53838" />
       <defs>
@@ -382,9 +382,9 @@ export const MapIcon: FC<TIcon> = ({ className }) => {
           width="32.8179"
           height="32.8178"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -416,9 +416,9 @@ export const MapIcon: FC<TIcon> = ({ className }) => {
           width="55.4375"
           height="55.4375"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -450,9 +450,9 @@ export const MapIcon: FC<TIcon> = ({ className }) => {
           width="57.5034"
           height="57.5034"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -484,9 +484,9 @@ export const MapIcon: FC<TIcon> = ({ className }) => {
           width="40.106"
           height="40.106"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -518,9 +518,9 @@ export const MapIcon: FC<TIcon> = ({ className }) => {
           width="67.9067"
           height="67.9067"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -552,9 +552,9 @@ export const MapIcon: FC<TIcon> = ({ className }) => {
           width="55.2828"
           height="55.2827"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -586,9 +586,9 @@ export const MapIcon: FC<TIcon> = ({ className }) => {
           width="40.106"
           height="40.106"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -620,9 +620,9 @@ export const MapIcon: FC<TIcon> = ({ className }) => {
           width="67.801"
           height="67.801"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -654,9 +654,9 @@ export const MapIcon: FC<TIcon> = ({ className }) => {
           width="52.866"
           height="52.866"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -688,9 +688,9 @@ export const MapIcon: FC<TIcon> = ({ className }) => {
           width="53.7499"
           height="53.7499"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -722,9 +722,9 @@ export const MapIcon: FC<TIcon> = ({ className }) => {
           width="40.106"
           height="40.106"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -756,9 +756,9 @@ export const MapIcon: FC<TIcon> = ({ className }) => {
           width="33.0729"
           height="33.0729"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -790,9 +790,9 @@ export const MapIcon: FC<TIcon> = ({ className }) => {
           width="23.912"
           height="23.912"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -824,9 +824,9 @@ export const MapIcon: FC<TIcon> = ({ className }) => {
           width="23.912"
           height="23.912"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -858,9 +858,9 @@ export const MapIcon: FC<TIcon> = ({ className }) => {
           width="40.106"
           height="40.106"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -892,9 +892,9 @@ export const MapIcon: FC<TIcon> = ({ className }) => {
           width="30.6006"
           height="30.6006"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -926,9 +926,9 @@ export const MapIcon: FC<TIcon> = ({ className }) => {
           width="30.6006"
           height="30.6006"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -960,9 +960,9 @@ export const MapIcon: FC<TIcon> = ({ className }) => {
           width="30.6006"
           height="30.6006"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -994,9 +994,9 @@ export const MapIcon: FC<TIcon> = ({ className }) => {
           width="40.106"
           height="40.106"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -1028,9 +1028,9 @@ export const MapIcon: FC<TIcon> = ({ className }) => {
           width="40.106"
           height="40.106"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -1062,9 +1062,9 @@ export const MapIcon: FC<TIcon> = ({ className }) => {
           width="54.5729"
           height="54.5729"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -1096,9 +1096,9 @@ export const MapIcon: FC<TIcon> = ({ className }) => {
           width="26.5699"
           height="26.5699"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -1130,9 +1130,9 @@ export const MapIcon: FC<TIcon> = ({ className }) => {
           width="40.106"
           height="40.106"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -1164,9 +1164,9 @@ export const MapIcon: FC<TIcon> = ({ className }) => {
           width="26.6552"
           height="26.6551"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -1198,9 +1198,9 @@ export const MapIcon: FC<TIcon> = ({ className }) => {
           width="40.106"
           height="40.106"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -1232,9 +1232,9 @@ export const MapIcon: FC<TIcon> = ({ className }) => {
           width="40.106"
           height="40.106"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -1266,9 +1266,9 @@ export const MapIcon: FC<TIcon> = ({ className }) => {
           width="58.6429"
           height="58.643"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -1300,9 +1300,9 @@ export const MapIcon: FC<TIcon> = ({ className }) => {
           width="33.2133"
           height="33.2133"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -1334,9 +1334,9 @@ export const MapIcon: FC<TIcon> = ({ className }) => {
           width="35.2825"
           height="35.2825"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -1368,9 +1368,9 @@ export const MapIcon: FC<TIcon> = ({ className }) => {
           width="30.5721"
           height="30.5721"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"

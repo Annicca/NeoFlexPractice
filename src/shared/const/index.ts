@@ -79,3 +79,20 @@ export const FOOTER_LINKS: TLink[] = [
     href: "#",
   },
 ];
+
+export const CURRENCY_INTERVAL = 1000 * 60 * 15;
+
+export const CURRENCIES_REQUEST = [
+  "USD",
+  "EUR",
+  "CNY",
+  "JPY",
+  "CHF",
+  "TRY",
+  "BRL",
+  "PLN",
+  "UAH",
+  "BGN",
+  "RON",
+  "AZN",
+];

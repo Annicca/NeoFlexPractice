@@ -6,3 +6,4 @@ export { Burger } from "./burger";
 export { MovingMenu } from "./movingMenu";
 export * from "./icons";
 export { EmailInput } from "./emailInput";
+export { CurrencyItem } from "./currencyItem";

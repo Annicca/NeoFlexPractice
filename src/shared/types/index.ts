@@ -9,3 +9,8 @@ export type TIcon = {
   width?: string;
   height?: string;
 };
+
+export type TCurrency = {
+  name: string;
+  value: number | null;
+};

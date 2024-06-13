@@ -12,6 +12,7 @@ module.exports = {
     assetModuleFilename: path.join("assets", "[name].[contenthash][ext]"),
   },
   devServer: {
+    watchFiles: path.join(__dirname, "src"),
     port: 3000,
   },
   plugins: [

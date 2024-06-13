@@ -1,0 +1,1 @@
+export { GetNewsForm } from "./GetNewsForm";

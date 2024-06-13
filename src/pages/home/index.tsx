@@ -1,9 +1,9 @@
-import { EmailSubscribe } from "widgets";
-import { MapSection } from "widgets/mapSection/MapSection";
+import { EmailSubscribe, Currency, MapSection } from "widgets";
 
 export const HomePage = () => {
   return (
     <main>
+      <Currency />
       <MapSection />
       <EmailSubscribe />
     </main>
