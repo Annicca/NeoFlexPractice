@@ -12,6 +12,7 @@ html {
 }
 
 .title-h2 {
+  margin: 0;
   @include font-styles-ubuntu(
     var(--font-30),
     var(--black1C),
@@ -19,4 +20,12 @@ html {
     var(--letter-spacing-2),
     var(--medium)
   );
+
+  @include media-mobile {
+    @include font-styles-ubuntu(
+      var(--font-24),
+      var(--black1E),
+      var(--line-height-27)
+    );
+  }
 }

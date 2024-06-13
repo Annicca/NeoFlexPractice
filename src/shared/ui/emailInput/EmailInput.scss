@@ -23,6 +23,10 @@
       var(--line-height-30)
     );
 
+    @include media-mobile {
+      font-size: var(--font-16);
+    }
+
     &::placeholder {
       color: var(--grayB0);
     }

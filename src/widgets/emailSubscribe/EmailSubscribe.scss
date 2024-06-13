@@ -1,6 +1,5 @@
 .email-subscribe {
-  @include flex-container-center;
-  flex-direction: column;
+  @include flex-container-center(column);
   text-align: center;
   &__title {
     @include font-styles-ubuntu(
@@ -15,6 +14,14 @@
       var(--orange),
       var(--line-height-36)
     );
+
+    @include media-mobile {
+      @include font-styles-ubuntu(
+        var(--font-20),
+        var(--orange),
+        var(--line-height-22)
+      );
+    }
   }
   &__subtitle {
     padding-bottom: 65px;
@@ -25,5 +32,16 @@
       var(--letter-spacing-2),
       var(--medium)
     );
+  }
+
+  &__title,
+  &__subtitle {
+    @include media-mobile {
+      @include font-styles-ubuntu(
+        var(--font-24),
+        var(--black1E),
+        var(--line-height-27)
+      );
+    }
   }
 }

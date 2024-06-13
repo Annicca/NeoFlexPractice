@@ -45,9 +45,10 @@ $font-ubuntu: "Ubuntu", sans-serif;
   justify-content: flex-start;
   align-items: center;
 }
-@mixin flex-container-center {
+@mixin flex-container-center($flex-direction: row) {
   display: flex;
   justify-content: center;
+  flex-direction: $flex-direction;
   align-items: center;
 }
 @mixin flex-container-column {
