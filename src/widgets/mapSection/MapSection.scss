@@ -3,8 +3,13 @@
   text-align: center;
   &__subtitle {
     padding: 8px 0 50px;
-    line-height: var(--line-height-50);
-    font-weight: var(--medium);
+    @include font-styles-ubuntu(
+      null,
+      null,
+      $line-height: var(--line-height-50),
+      $letter-spacing: normal,
+      $font-weight: var(--medium)
+    );
   }
 
   &__img {

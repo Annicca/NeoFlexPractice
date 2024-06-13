@@ -20,7 +20,5 @@ export const useCurrency = () => {
     return () => clearInterval(updateCurrency);
   }, []);
 
-  console.log(currencies);
-
   return currencies;
 };

@@ -14,6 +14,10 @@
     grid-template-columns: auto;
   }
 
+  @include media-mobile {
+    grid-template-columns: 1fr;
+  }
+
   &__all {
     @include font-styles-ubuntu(
       var(--font-20),

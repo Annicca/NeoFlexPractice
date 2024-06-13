@@ -12,11 +12,20 @@
     var(--gray178) 67.93%
   );
 
+  @include media-mobile {
+    text-align: center;
+  }
+
   &__top {
     @include flex-container;
 
     @include media-tablet {
       flex-wrap: wrap;
+      row-gap: 20px;
+    }
+
+    @include media-mobile {
+      justify-content: center;
     }
   }
 
@@ -29,6 +38,10 @@
       null,
       var(--medium)
     );
+
+    @include media-mobile {
+      font-size: var(--font-16);
+    }
   }
 
   &__date {
@@ -40,18 +53,21 @@
       line-height: var(--line-height-50);
 
       @include media-mobile {
-        line-height: var(--line-height-22);
+        line-height: var(--line-height-30);
       }
     }
-  }
-  &__subtitle {
+
     @include media-mobile {
-      font-size: var(--font-16);
+      justify-content: center;
     }
   }
 
   &__content {
     @include flex-container;
+
+    @include media-mobile {
+      justify-content: center;
+    }
   }
 
   &__icon {

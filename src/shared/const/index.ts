@@ -84,10 +84,10 @@ export const CURRENCY_INTERVAL = 1000 * 60 * 15;
 
 export const CURRENCIES_REQUEST = [
   "USD",
-  "EUR",
   "CNY",
-  "JPY",
   "CHF",
+  "EUR",
+  "JPY",
   "TRY",
   "BRL",
   "PLN",
@@ -95,4 +95,11 @@ export const CURRENCIES_REQUEST = [
   "BGN",
   "RON",
   "AZN",
+];
+
+export const FEATURES = [
+  "Powerfull online protection.",
+  "Cashback without borders.",
+  "Personal design",
+  "Work anywhere in the world",
 ];

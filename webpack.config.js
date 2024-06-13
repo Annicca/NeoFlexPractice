@@ -9,6 +9,7 @@ module.exports = {
   output: {
     filename: "bundle.[fullhash].js",
     path: path.resolve(__dirname, "dist"),
+    publicPath: "/",
     assetModuleFilename: path.join("assets", "[name].[contenthash][ext]"),
   },
   devServer: {
@@ -61,19 +62,22 @@ module.exports = {
       {
         test: /\.(png|jpg|jpeg|gif)$/i,
         type: "asset/resource",
+        generator: {
+          filename: "[name].[contenthash][ext]",
+        },
       },
       {
         test: /\.svg$/,
         type: "asset/resource",
         generator: {
-          filename: path.join("icons", "[name].[contenthash][ext]"),
+          filename: "[name].[contenthash][ext]",
         },
       },
       {
-        test: /\.(woff(2)?|ttf|eot|svg)$/,
+        test: /\.(woff(2)?|ttf|eot)$/,
         type: "asset/resource",
         generator: {
-          filename: path.join("assets/fonts", "[name].[contenthash][ext]"),
+          filename: "[name].[contenthash][ext]",
         },
       },
     ],

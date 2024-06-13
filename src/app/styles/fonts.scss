@@ -1,21 +1,36 @@
 @font-face {
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Ubuntu";
   font-style: normal;
   font-weight: 700;
-  src: url("/src/shared/assets/fonts/Ubuntu/Ubuntu-Bold.ttf") format("ttf");
+  src: url("/src/shared/assets/fonts/Ubuntu/Ubuntu-Bold.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Ubuntu";
   font-style: normal;
-  font-weight: 600;
-  src: url("/src/shared/assets/fonts/Ubuntu/Ubuntu-Medium.ttf") format("ttf");
+  font-weight: 500;
+  src: url("/src/shared/assets/fonts/Ubuntu/Ubuntu-Medium.woff2")
+    format("woff2");
 }
 
 @font-face {
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Nunito Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("/src/shared/assets/fonts/NunitoSans/NunitoSans-Regular.ttf")
-    format("ttf");
+  src: url("/src/shared/assets/fonts/NunitoSans/NunitoSans-Regular.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  src: url("/src/shared/assets/fonts/Rubik/Rubik-Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/src/shared/assets/fonts/Rubik/Rubik-Regular.woff2") format("woff2");
 }
