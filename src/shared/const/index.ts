@@ -103,3 +103,12 @@ export const FEATURES = [
   "Personal design",
   "Work anywhere in the world",
 ];
+
+const card1Src = require("/src/shared/assets/images/card1.png");
+const card2Src = require("/src/shared/assets/images/card2.png");
+const card3Src = require("/src/shared/assets/images/card3.png");
+const card4Src = require("/src/shared/assets/images/card4.png");
+
+export const CARDS = [card1Src, card2Src, card3Src, card4Src];
+
+export const MOCK_PHOTO = "/src/shared/assets/images/mock.png";

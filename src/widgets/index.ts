@@ -4,3 +4,4 @@ export { EmailSubscribe } from "./emailSubscribe";
 export { MapSection } from "./mapSection";
 export { Currency } from "./currency";
 export { YouCanUse } from "./youCanUse";
+export { ChooseCards } from "./chooseCards";
