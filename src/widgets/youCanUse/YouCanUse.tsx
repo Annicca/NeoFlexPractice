@@ -19,7 +19,9 @@ export const YouCanUse: FC = () => {
           className="you-can-use__list"
           items={FEATURES}
           renderItem={(item) => (
-            <ListItem className="you-can-use__item">{item}</ListItem>
+            <ListItem key={item} className="you-can-use__item">
+              {item}
+            </ListItem>
           )}
         />
       </div>

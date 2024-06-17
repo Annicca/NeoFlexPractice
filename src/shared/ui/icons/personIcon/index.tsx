@@ -190,8 +190,8 @@ export const PersonIcon: FC<TIcon> = ({
         fill="#E6FCFF"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M234.147 175.01C225.353 167.287 217.409 170.555 212.702 172.491C212.179 172.707 211.695 172.905 211.255 173.071L208.308 173.076C207.753 173.077 207.305 173.53 207.31 174.085L207.332 176.563C207.337 177.112 207.783 177.554 208.332 177.554L210.463 177.554C208.919 190.805 218.691 194.351 226.506 191.962C233.474 189.833 235.339 183.808 235.712 180.028C237.202 176.725 243.736 178.251 243.995 179.954C244.001 179.994 244.008 180.039 244.015 180.088L244.015 180.088C244.322 182.162 245.867 192.611 257.63 192.625C267.265 192.637 269.878 184.03 269.98 179.724L272.475 179.702C273.027 179.697 273.471 179.246 273.466 178.693L273.439 175.662C273.434 175.11 272.982 174.666 272.43 174.671L269.936 174.693C263.66 168.335 250.178 168.93 245.429 174.91C240.19 173.702 235.725 174.474 234.147 175.01ZM222.149 190.907C216.757 190.907 214.041 186.657 213.351 184.76C212.558 183.173 211.931 179.038 213.81 175.753C216.199 171.577 227.428 170.412 231.362 176.312C235.295 182.212 231.362 190.907 222.149 190.907ZM266.679 184.76C265.989 186.657 263.274 190.907 257.881 190.907C248.669 190.907 244.736 182.212 248.669 176.312C252.602 170.412 263.832 171.577 266.221 175.753C268.1 179.038 267.473 183.173 266.679 184.76Z"
         fill="#111111"
       />
@@ -209,26 +209,26 @@ export const PersonIcon: FC<TIcon> = ({
       />
       <circle cx="242.378" cy="357.721" r="11.1765" fill="white" />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M130.715 169.875C130.915 166.467 131.594 163.613 132.161 162.027C133.273 164.809 133.823 167.48 134.009 169.916C136.445 170.101 139.116 170.652 141.897 171.764C140.311 172.331 137.458 173.01 134.049 173.21C133.859 176.828 132.929 179.64 132.161 181.08C131.226 178.463 130.799 175.772 130.688 173.237C128.153 173.125 125.461 172.699 122.844 171.764C124.285 170.996 127.096 170.066 130.715 169.875Z"
         fill="url(#paint7_linear_93_3665)"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M103.828 147.449C103.96 145.18 104.413 143.28 104.79 142.225C105.53 144.076 105.896 145.854 106.02 147.475C107.641 147.599 109.419 147.965 111.271 148.706C110.215 149.083 108.316 149.535 106.047 149.668C105.92 152.077 105.301 153.948 104.79 154.907C104.167 153.165 103.884 151.373 103.81 149.686C102.122 149.612 100.33 149.328 98.5885 148.706C99.5471 148.195 101.419 147.575 103.828 147.449Z"
         fill="url(#paint8_linear_93_3665)"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M60.5044 131.471C60.7037 128.062 61.3833 125.209 61.9497 123.623C63.0625 126.405 63.6125 129.075 63.7985 131.511C66.234 131.697 68.9048 132.247 71.6867 133.36C70.1006 133.926 67.2472 134.606 63.8386 134.805C63.6485 138.424 62.7178 141.236 61.9497 142.676C61.0152 140.059 60.5887 137.367 60.4774 134.832C57.9422 134.721 55.2505 134.294 52.6336 133.36C54.0738 132.592 56.8855 131.661 60.5044 131.471Z"
         fill="url(#paint9_linear_93_3665)"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M64.2134 209.812C64.5066 204.797 65.5065 200.599 66.3398 198.265C67.9769 202.358 68.7862 206.287 69.0598 209.871C72.643 210.144 76.5724 210.954 80.6651 212.591C78.3317 213.424 74.1337 214.424 69.1187 214.717C68.839 220.041 67.4698 224.178 66.3398 226.297C64.9648 222.447 64.3374 218.487 64.1737 214.757C60.4438 214.593 56.4836 213.966 52.6336 212.591C54.7524 211.461 58.8892 210.091 64.2134 209.812Z"
         fill="url(#paint10_linear_93_3665)"
       />
@@ -239,42 +239,42 @@ export const PersonIcon: FC<TIcon> = ({
       <path
         d="M132.428 119.675C128.265 113.957 116.538 101.744 102.934 98.6345"
         stroke="#FE9076"
-        stroke-width="1.60277"
-        stroke-linecap="round"
+        strokeWidth="1.60277"
+        strokeLinecap="round"
       />
       <path
         d="M36.5511 167.911C30.3979 164.424 14.6733 158.145 0.999998 160.933"
         stroke="#FFA400"
-        stroke-width="1.60277"
-        stroke-linecap="round"
+        strokeWidth="1.60277"
+        strokeLinecap="round"
       />
       <path
         d="M120.527 213.906C117.374 216.688 109.788 224.59 104.669 233.937"
         stroke="#23BB86"
-        stroke-width="1.60277"
-        stroke-linecap="round"
+        strokeWidth="1.60277"
+        strokeLinecap="round"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M348.065 169.875C347.866 166.467 347.186 163.613 346.62 162.027C345.507 164.809 344.957 167.48 344.771 169.916C342.335 170.101 339.664 170.652 336.883 171.764C338.469 172.331 341.322 173.01 344.731 173.21C344.921 176.828 345.851 179.64 346.62 181.08C347.554 178.463 347.981 175.772 348.092 173.237C350.627 173.125 353.319 172.699 355.936 171.764C354.496 170.996 351.684 170.066 348.065 169.875Z"
         fill="url(#paint11_linear_93_3665)"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M374.953 147.449C374.82 145.18 374.368 143.28 373.991 142.225C373.25 144.076 372.884 145.854 372.76 147.475C371.139 147.599 369.361 147.965 367.509 148.706C368.565 149.083 370.464 149.535 372.733 149.668C372.86 152.077 373.479 153.948 373.991 154.907C374.613 153.165 374.896 151.373 374.971 149.686C376.658 149.612 378.45 149.328 380.192 148.706C379.233 148.195 377.361 147.575 374.953 147.449Z"
         fill="url(#paint12_linear_93_3665)"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M418.276 131.471C418.076 128.062 417.397 125.209 416.83 123.623C415.718 126.405 415.168 129.075 414.982 131.511C412.546 131.697 409.875 132.247 407.093 133.36C408.679 133.926 411.533 134.606 414.942 134.805C415.132 138.424 416.062 141.236 416.83 142.676C417.765 140.059 418.191 137.367 418.303 134.832C420.838 134.721 423.53 134.294 426.146 133.36C424.706 132.592 421.895 131.661 418.276 131.471Z"
         fill="url(#paint13_linear_93_3665)"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M414.567 209.812C414.273 204.797 413.274 200.599 412.44 198.265C410.803 202.358 409.994 206.287 409.72 209.871C406.137 210.144 402.208 210.954 398.115 212.591C400.448 213.424 404.646 214.424 409.661 214.717C409.941 220.041 411.31 224.178 412.44 226.297C413.815 222.447 414.443 218.487 414.606 214.757C418.336 214.593 422.296 213.966 426.146 212.591C424.028 211.461 419.891 210.091 414.567 209.812Z"
         fill="url(#paint14_linear_93_3665)"
       />
@@ -309,20 +309,20 @@ export const PersonIcon: FC<TIcon> = ({
       <path
         d="M346.352 119.675C350.515 113.957 362.242 101.744 375.846 98.6345"
         stroke="#FE9076"
-        stroke-width="1.60277"
-        stroke-linecap="round"
+        strokeWidth="1.60277"
+        strokeLinecap="round"
       />
       <path
         d="M442.229 167.911C448.382 164.424 464.107 158.145 477.78 160.933"
         stroke="#FFA400"
-        stroke-width="1.60277"
-        stroke-linecap="round"
+        strokeWidth="1.60277"
+        strokeLinecap="round"
       />
       <path
         d="M358.253 213.906C361.406 216.688 368.992 224.59 374.111 233.937"
         stroke="#23BB86"
-        stroke-width="1.60277"
-        stroke-linecap="round"
+        strokeWidth="1.60277"
+        strokeLinecap="round"
       />
       <path
         d="M269.426 56.1736C267.338 52.9483 263.112 54.7053 263.112 58.2188C263.112 60.8572 268.906 64.9843 269.426 65.521C269.95 64.9843 275.456 60.8572 275.456 58.2188C275.456 54.732 271.518 52.9483 269.426 56.1736Z"
@@ -333,7 +333,7 @@ export const PersonIcon: FC<TIcon> = ({
         cy="59.9987"
         r="13.7999"
         stroke="#F7F7F7"
-        stroke-width="0.649684"
+        strokeWidth="0.649684"
       />
       <path
         d="M219.903 36.9405C218.055 34.0859 214.315 35.641 214.315 38.7506C214.315 41.0857 219.443 44.7383 219.903 45.2133C220.367 44.7383 225.24 41.0857 225.24 38.7506C225.24 35.6646 221.755 34.0859 219.903 36.9405Z"
@@ -344,7 +344,7 @@ export const PersonIcon: FC<TIcon> = ({
         cy="40.3258"
         r="12.2135"
         stroke="#F7F7F7"
-        stroke-width="0.574998"
+        strokeWidth="0.574998"
       />
       <path
         d="M252.586 15.9654C251.322 14.013 248.763 15.0766 248.763 17.2034C248.763 18.8004 252.271 21.2986 252.586 21.6234C252.903 21.2986 256.235 18.8004 256.235 17.2034C256.235 15.0927 253.852 14.013 252.586 15.9654Z"
@@ -355,7 +355,7 @@ export const PersonIcon: FC<TIcon> = ({
         cy="18.2807"
         r="8.35318"
         stroke="#F7F7F7"
-        stroke-width="0.393259"
+        strokeWidth="0.393259"
       />
       <path
         d="M194.856 5.1013C193.822 3.50383 191.729 4.37408 191.729 6.11426C191.729 7.42101 194.598 9.46511 194.856 9.7309C195.115 9.46511 197.842 7.42101 197.842 6.11426C197.842 4.38727 195.892 3.50383 194.856 5.1013Z"
@@ -366,7 +366,7 @@ export const PersonIcon: FC<TIcon> = ({
         cy="6.99577"
         r="6.83488"
         stroke="#F7F7F7"
-        stroke-width="0.321779"
+        strokeWidth="0.321779"
       />
       <path
         d="M189.769 79.9873C187.511 76.4995 182.941 78.3995 182.941 82.1989C182.941 85.0519 189.206 89.5148 189.769 90.0951C190.336 89.5148 196.29 85.0519 196.29 82.1989C196.29 78.4283 192.031 76.4995 189.769 79.9873Z"
@@ -377,7 +377,7 @@ export const PersonIcon: FC<TIcon> = ({
         cy="84.1235"
         r="14.9226"
         stroke="#F7F7F7"
-        stroke-width="0.702541"
+        strokeWidth="0.702541"
       />
       <defs>
         <filter
@@ -387,9 +387,9 @@ export const PersonIcon: FC<TIcon> = ({
           width="173.661"
           height="125.955"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -421,9 +421,9 @@ export const PersonIcon: FC<TIcon> = ({
           width="76.1891"
           height="88.7754"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -455,9 +455,9 @@ export const PersonIcon: FC<TIcon> = ({
           width="89.5669"
           height="111.363"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -489,9 +489,9 @@ export const PersonIcon: FC<TIcon> = ({
           width="76.1891"
           height="88.7754"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -523,9 +523,9 @@ export const PersonIcon: FC<TIcon> = ({
           width="89.567"
           height="111.363"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -558,8 +558,8 @@ export const PersonIcon: FC<TIcon> = ({
           y2="334.189"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FFEFE0" />
-          <stop offset="1" stop-color="#FFBE99" />
+          <stop stopColor="#FFEFE0" />
+          <stop offset="1" stopColor="#FFBE99" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_93_3665"
@@ -569,8 +569,8 @@ export const PersonIcon: FC<TIcon> = ({
           y2="448.546"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FF9F81" />
-          <stop offset="1" stop-color="#F53838" />
+          <stop stopColor="#FF9F81" />
+          <stop offset="1" stopColor="#F53838" />
         </linearGradient>
         <linearGradient
           id="paint2_linear_93_3665"
@@ -580,8 +580,8 @@ export const PersonIcon: FC<TIcon> = ({
           y2="344.358"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.0677966" stop-color="#FFEFE0" />
-          <stop offset="1" stop-color="#FFBE99" />
+          <stop offset="0.0677966" stopColor="#FFEFE0" />
+          <stop offset="1" stopColor="#FFBE99" />
         </linearGradient>
         <linearGradient
           id="paint3_linear_93_3665"
@@ -591,8 +591,8 @@ export const PersonIcon: FC<TIcon> = ({
           y2="239.361"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FFEFE0" />
-          <stop offset="1" stop-color="#FFBE99" />
+          <stop stopColor="#FFEFE0" />
+          <stop offset="1" stopColor="#FFBE99" />
         </linearGradient>
         <linearGradient
           id="paint4_linear_93_3665"
@@ -602,8 +602,8 @@ export const PersonIcon: FC<TIcon> = ({
           y2="248.606"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FFEFE0" />
-          <stop offset="1" stop-color="#FFBE99" />
+          <stop stopColor="#FFEFE0" />
+          <stop offset="1" stopColor="#FFBE99" />
         </linearGradient>
         <linearGradient
           id="paint5_linear_93_3665"
@@ -613,8 +613,8 @@ export const PersonIcon: FC<TIcon> = ({
           y2="217.302"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FFEFE0" />
-          <stop offset="1" stop-color="#FFBE99" />
+          <stop stopColor="#FFEFE0" />
+          <stop offset="1" stopColor="#FFBE99" />
         </linearGradient>
         <linearGradient
           id="paint6_linear_93_3665"
@@ -624,8 +624,8 @@ export const PersonIcon: FC<TIcon> = ({
           y2="434.729"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.0171777" stop-color="white" />
-          <stop offset="1" stop-color="#D7D7D7" />
+          <stop offset="0.0171777" stopColor="white" />
+          <stop offset="1" stopColor="#D7D7D7" />
         </linearGradient>
         <linearGradient
           id="paint7_linear_93_3665"
@@ -635,8 +635,8 @@ export const PersonIcon: FC<TIcon> = ({
           y2="181.945"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FFE89E" />
-          <stop offset="1" stop-color="#FFBF1A" />
+          <stop stopColor="#FFE89E" />
+          <stop offset="1" stopColor="#FFBF1A" />
         </linearGradient>
         <linearGradient
           id="paint8_linear_93_3665"
@@ -646,8 +646,8 @@ export const PersonIcon: FC<TIcon> = ({
           y2="155.482"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FFE89E" />
-          <stop offset="1" stop-color="#FFBF1A" />
+          <stop stopColor="#FFE89E" />
+          <stop offset="1" stopColor="#FFBF1A" />
         </linearGradient>
         <linearGradient
           id="paint9_linear_93_3665"
@@ -657,8 +657,8 @@ export const PersonIcon: FC<TIcon> = ({
           y2="143.54"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FFE89E" />
-          <stop offset="1" stop-color="#FFBF1A" />
+          <stop stopColor="#FFE89E" />
+          <stop offset="1" stopColor="#FFBF1A" />
         </linearGradient>
         <linearGradient
           id="paint10_linear_93_3665"
@@ -668,8 +668,8 @@ export const PersonIcon: FC<TIcon> = ({
           y2="227.569"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FFE89E" />
-          <stop offset="1" stop-color="#FFBF1A" />
+          <stop stopColor="#FFE89E" />
+          <stop offset="1" stopColor="#FFBF1A" />
         </linearGradient>
         <linearGradient
           id="paint11_linear_93_3665"
@@ -679,8 +679,8 @@ export const PersonIcon: FC<TIcon> = ({
           y2="181.945"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FFE89E" />
-          <stop offset="1" stop-color="#FFBF1A" />
+          <stop stopColor="#FFE89E" />
+          <stop offset="1" stopColor="#FFBF1A" />
         </linearGradient>
         <linearGradient
           id="paint12_linear_93_3665"
@@ -690,8 +690,8 @@ export const PersonIcon: FC<TIcon> = ({
           y2="155.482"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FFE89E" />
-          <stop offset="1" stop-color="#FFBF1A" />
+          <stop stopColor="#FFE89E" />
+          <stop offset="1" stopColor="#FFBF1A" />
         </linearGradient>
         <linearGradient
           id="paint13_linear_93_3665"
@@ -701,8 +701,8 @@ export const PersonIcon: FC<TIcon> = ({
           y2="143.54"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FFE89E" />
-          <stop offset="1" stop-color="#FFBF1A" />
+          <stop stopColor="#FFE89E" />
+          <stop offset="1" stopColor="#FFBF1A" />
         </linearGradient>
         <linearGradient
           id="paint14_linear_93_3665"
@@ -712,8 +712,8 @@ export const PersonIcon: FC<TIcon> = ({
           y2="227.569"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FFE89E" />
-          <stop offset="1" stop-color="#FFBF1A" />
+          <stop stopColor="#FFE89E" />
+          <stop offset="1" stopColor="#FFBF1A" />
         </linearGradient>
       </defs>
     </svg>
