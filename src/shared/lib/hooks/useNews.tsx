@@ -3,7 +3,7 @@ import { newsApi } from "shared/api/newsApi";
 import { TNews } from "shared/types";
 
 export const useNews = () => {
-  const [news, setNews] = useState<TNews[]>([...articles]);
+  const [news, setNews] = useState<TNews[]>([]);
   const [numberRequest, setNumberRequest] = useState(0);
   console.log(news);
 
