@@ -1,0 +1,73 @@
+//breakpoints
+$desktop: 1300px;
+$tablet: 920px;
+$mobile: 500px;
+
+@mixin font-styles(
+  $font-family: var(--font-ubuntu),
+  $font-weight: var(--bold),
+  $font-size: var(--font-16),
+  $color: var(--black1E),
+  $line-height: var(--line-height-18),
+  $letter-spacing: var(--letter-spacing-2)
+) {
+  font-family: $font-family;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+  color: $color;
+  letter-spacing: $letter-spacing;
+}
+
+@mixin font-styles-ubuntu(
+  $font-size: var(--font-16),
+  $color: var(--black1E),
+  $line-height: var(--line-height-18),
+  $letter-spacing: var(--letter-spacing-2),
+  $font-weight: var(--bold)
+) {
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+  color: $color;
+}
+
+@mixin flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@mixin flex-container-start {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+@mixin flex-container-center($flex-direction: row) {
+  display: flex;
+  justify-content: center;
+  flex-direction: $flex-direction;
+  align-items: center;
+}
+@mixin flex-container-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin media-desctop() {
+  @media screen and (max-width: $desktop) {
+    @content;
+  }
+}
+
+@mixin media-tablet() {
+  @media screen and (max-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin media-mobile() {
+  @media screen and (max-width: $mobile) {
+    @content;
+  }
+}

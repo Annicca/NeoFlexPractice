@@ -1,0 +1,21 @@
+.currency-item {
+  @include flex-container-start();
+  gap: 10px;
+
+  &__name,
+  &__value {
+    @include font-styles-ubuntu(
+      var(--font-20),
+      var(--gray80),
+      var(--line-height-22)
+    );
+
+    @include media-mobile {
+      font-size: var(--font-16);
+    }
+  }
+
+  &__value {
+    color: var(--black);
+  }
+}

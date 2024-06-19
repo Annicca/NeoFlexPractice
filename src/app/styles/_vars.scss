@@ -1,0 +1,61 @@
+:root {
+  //colors
+  --blue: #003cff;
+  --indigo: #686df1;
+  --indigo-light: #9b9eee;
+  --white: #fff;
+  --white-opacity: #ffffffcf;
+  --main-color: #f5f4ff;
+  --pink: #b4387a;
+  --blue-gray: #7796c0;
+  --black: #000;
+  --black1E: #1c1c1e;
+  --black1C: #1c1c1c;
+  --black29: #1d1929;
+  --dark-blue: #0b132a;
+  --brown: #b2a35f;
+  --orange: #eb801d;
+  --gray: #b2b2b233;
+  --gray48: #2d3748;
+  --grayB0: #9092b0;
+  --gray80: #808080;
+  --gray178-opacity: rgba(178, 178, 178, 0.8);
+  --gray178: rgba(178, 178, 178, 0);
+  --gray65: #4f5665;
+  --shadow: #363a781a;
+  --shadowb3: #bbbbbb33;
+  --shadow14: #00000014;
+
+  //fonts
+  --font-ubuntu: "Ubuntu", sans-serif;
+  --font-nunito: "Nunito Sans", sans-serif;
+  --font-rubik: "Rubik", sans-serif;
+
+  //font-size
+  --font-14: 14px;
+  --font-16: 16px;
+  --font-20: 20px;
+  --font-24: 24px;
+  --font-30: 30px;
+  --font-35: 35px;
+  --font-48: 48px;
+
+  //font-weight
+  --bold: 700;
+  --medium: 500;
+  --regular: 400;
+
+  //line-height
+  --line-height-16: 16px;
+  --line-height-18: 18px;
+  --line-height-22: 22px;
+  --line-height-24: 24px;
+  --line-height-27: 27px;
+  --line-height-30: 30px;
+  --line-height-36: 36px;
+  --line-height-44: 44px;
+  --line-height-50: 50px;
+
+  //letter-spacing
+  --letter-spacing-2: 0.02;
+}

@@ -1,0 +1,78 @@
+.currency {
+  padding: 30px;
+  margin-bottom: 50px;
+  border-radius: 30px;
+  color: var(--black);
+  box-shadow:
+    0px 2px 4px 0px var(--shadowb3),
+    0px 0px 4px 0px var(--shadow14);
+  background: linear-gradient(
+    358.2deg,
+    var(--gray178-opacity) 8.06%,
+    var(--gray178) 67.93%
+  );
+
+  @include media-mobile {
+    text-align: center;
+  }
+
+  &__top {
+    @include flex-container;
+
+    @include media-tablet {
+      flex-wrap: wrap;
+      row-gap: 20px;
+    }
+
+    @include media-mobile {
+      justify-content: center;
+    }
+  }
+
+  &__subtitle {
+    padding-top: 25px;
+    @include font-styles-ubuntu(
+      var(--font-20),
+      var(--black),
+      var(--line-height-50),
+      null,
+      var(--medium)
+    );
+
+    @include media-mobile {
+      font-size: var(--font-16);
+    }
+  }
+
+  &__date {
+    @include flex-container-start;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    span {
+      font-weight: var(--medium);
+      line-height: var(--line-height-50);
+
+      @include media-mobile {
+        line-height: var(--line-height-30);
+      }
+    }
+
+    @include media-mobile {
+      justify-content: center;
+    }
+  }
+
+  &__content {
+    @include flex-container;
+
+    @include media-mobile {
+      justify-content: center;
+    }
+  }
+
+  &__icon {
+    @include media-mobile {
+      display: none;
+    }
+  }
+}

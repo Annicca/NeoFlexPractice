@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+  @include font-styles();
+
+  @include media-mobile {
+    @include font-styles-ubuntu(var(--font-14), null, var(--line-height-16));
+  }
+}
+
+html {
+  background-color: var(--main-color);
+}
+
+.title-h2 {
+  margin: 0;
+  @include font-styles-ubuntu(
+    var(--font-30),
+    var(--black1C),
+    var(--line-height-50),
+    normal,
+    var(--medium)
+  );
+
+  @include media-mobile {
+    @include font-styles-ubuntu(
+      var(--font-24),
+      var(--black1E),
+      var(--line-height-27)
+    );
+  }
+}

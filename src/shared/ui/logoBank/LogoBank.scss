@@ -1,0 +1,15 @@
+.logo-bank {
+  @include font-styles-ubuntu(
+    var(--font-24),
+    var(--pink),
+    var(--line-height-27)
+  );
+
+  @include media-mobile {
+    @include font-styles-ubuntu(
+      var(--font-20),
+      var(--pink),
+      var(--line-height-22)
+    );
+  }
+}
