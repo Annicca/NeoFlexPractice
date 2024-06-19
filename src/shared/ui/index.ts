@@ -8,3 +8,4 @@ export * from "./icons";
 export { EmailInput } from "./emailInput";
 export { CurrencyItem } from "./currencyItem";
 export { Image } from "./image";
+export { NewsItem } from "./newsItem";

@@ -14,3 +14,10 @@ export type TCurrency = {
   name: string;
   value: number | null;
 };
+
+export type TNews = {
+  urlToImage: string | null;
+  title: string | null;
+  url: string;
+  description: string | null;
+};

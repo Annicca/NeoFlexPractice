@@ -1,13 +1,11 @@
 import { ReactNode } from "react";
 
-export type TListProps<T> = {
+export type TListProps<T> = React.HTMLAttributes<HTMLUListElement> & {
   items: T[];
   renderItem: (item: T, index?: number) => ReactNode;
-  className?: string;
 };
 
 export const List = <T,>(props: TListProps<T>) => {
-  return (
-    <ul className={props.className}>{props.items?.map(props.renderItem)}</ul>
-  );
+  const { items, renderItem, ...otherProps } = props;
+  return <ul {...otherProps}>{items?.map(renderItem)}</ul>;
 };

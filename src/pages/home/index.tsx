@@ -4,6 +4,7 @@ import {
   MapSection,
   YouCanUse,
   ChooseCards,
+  News,
 } from "widgets";
 
 export const HomePage = () => {
@@ -13,6 +14,7 @@ export const HomePage = () => {
       <YouCanUse />
       <Currency />
       <MapSection />
+      <News />
       <EmailSubscribe />
     </main>
   );

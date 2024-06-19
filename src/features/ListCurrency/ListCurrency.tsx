@@ -1,9 +1,9 @@
+import { useState } from "react";
 import { useCurrency } from "shared/lib";
 import { TCurrency } from "shared/types";
 import { Button, CurrencyItem, List, ListItem } from "shared/ui";
 
 import "./ListCurrency.scss";
-import { useState } from "react";
 
 export const ListCurrency = () => {
   const currencies = useCurrency();
