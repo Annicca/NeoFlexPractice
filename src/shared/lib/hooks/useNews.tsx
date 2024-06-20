@@ -5,7 +5,6 @@ import { TNews } from "shared/types";
 export const useNews = () => {
   const [news, setNews] = useState<TNews[]>([]);
   const [numberRequest, setNumberRequest] = useState(0);
-  console.log(news);
 
   const filterNews = useMemo(() => {
     return news.filter((item) => {
@@ -18,10 +17,10 @@ export const useNews = () => {
 
   if (numberRequest === 100) return filterNews;
   useEffect(() => {
+    setNumberRequest((numberRequest) => numberRequest + 1);
     newsApi.getNews().then((news) => {
       if (news) {
         setNews(news);
-        setNumberRequest((numberRequest) => numberRequest + 1);
       }
     });
   }, []);
