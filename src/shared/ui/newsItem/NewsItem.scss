@@ -10,11 +10,7 @@
   background-color: var(--white);
   border-radius: 28px;
 
-  border-image-source: linear-gradient(
-      0deg,
-      var(--shadowRGBA),
-      var(--shadowRGBA)
-    ),
+  border-image-source: linear-gradient(0deg, var(--shadow187), var(--shadow187)),
     linear-gradient(0deg, var(--gradientGray), var(--gradientGray));
   box-shadow:
     0px 2px 4px 0px var(--black33),
