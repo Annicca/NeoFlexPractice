@@ -12,7 +12,7 @@ type TNewsItemProps = {
 export const NewsItem: FC<TNewsItemProps> = ({ news }) => {
   return (
     <div className="news-item">
-      <Link to={news.url} className="news-item__link" />
+      <Link to={news.url} target="_blank" className="news-item__link" />
       <Image
         className="news-item__img"
         src={news?.urlToImage || ""}

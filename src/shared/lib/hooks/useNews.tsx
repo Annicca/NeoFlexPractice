@@ -25,5 +25,7 @@ export const useNews = () => {
     });
   }, []);
 
+  console.log(filterNews);
+
   return filterNews;
 };

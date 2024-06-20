@@ -1,6 +1,7 @@
 .news-item {
+  position: relative;
   width: 255px;
-  height: 450px;
+  height: 385px;
   padding: 30px;
   margin: 4px 2px;
   box-sizing: content-box;
@@ -21,6 +22,15 @@
   @include media-mobile {
     width: 270px;
     box-sizing: border-box;
+  }
+
+  &__link {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    cursor: pointer;
   }
 
   &__img {
@@ -51,7 +61,6 @@
 
   &__title,
   &__description {
-    height: 100px;
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 4;

@@ -1,4 +1,4 @@
-import { FC, useEffect } from "react";
+import { FC, useEffect, useRef, useState } from "react";
 import { useNews } from "shared/lib/hooks/useNews";
 import { lib } from "shared/lib";
 import { TNews } from "shared/types";
@@ -9,9 +9,18 @@ import "./ListNews.scss";
 
 export const ListNews: FC = () => {
   const news = useNews();
+  const sliderRef = useRef(null);
+  const prevBtnRef = useRef(null);
+  const nextBtnRef = useRef(null);
+  const [step, setStep] = useState(0);
+
   useEffect(() => {
-    lib.sliderGo();
-  }, []);
+    const sliderStep = lib.getStep(sliderRef.current, news.length);
+    if (sliderStep) {
+      setStep(sliderStep);
+    }
+  }, [sliderRef.current, news]);
+
   if (news === undefined || news === null) {
     return (
       <div className="news-loading">
@@ -24,10 +33,18 @@ export const ListNews: FC = () => {
     <div className="news-slider">
       <List
         className="news-slider__list"
-        id="js-slider"
+        ref={sliderRef}
+        onScroll={() =>
+          lib.onScroll(
+            sliderRef.current,
+            prevBtnRef.current,
+            nextBtnRef.current,
+            step
+          )
+        }
         items={news}
         renderItem={(item: TNews) => (
-          <ListItem key={item.title} id="js-slide">
+          <ListItem key={item.title}>
             <NewsItem news={item} />
           </ListItem>
         )}
@@ -36,13 +53,15 @@ export const ListNews: FC = () => {
         <Button
           mode="clear"
           className="news-slider__button news-slider__button_prev news-slider__button_disabled"
-          id="js-prev"
+          ref={prevBtnRef}
+          onClick={() => lib.prevScroll(sliderRef.current, step)}
         >
           <ArrowSliderIcon className="news-slider__btn-icon" />
         </Button>
         <Button
           className="news-slider__button news-slider__button_next"
-          id="js-next"
+          ref={nextBtnRef}
+          onClick={() => lib.nextScroll(sliderRef.current, step)}
         >
           <ArrowSliderIcon className="news-slider__btn-icon" />
         </Button>
