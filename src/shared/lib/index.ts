@@ -1,4 +1,5 @@
 import { AxiosError } from "axios";
+import { REMOVED_DESCRIPTION } from "shared/const";
 
 const getStep = (slider: HTMLElement | null, lengthItems: number) => {
   if (!slider) return;
@@ -67,33 +68,37 @@ const onScroll = (
   }
 };
 
-// const sliderGo = (
-//   slider: HTMLElement | null,
-//   prevButton: HTMLElement | null,
-//   nextButton: HTMLElement | null
-// ) => {
-//   // const slider = document.getElementById("js-slider");
-//   // const prevButton = document.getElementById("js-prev");
-//   // const nextButton = document.getElementById("js-next");
+/**
+ * проверка на валидность url картинки
+ * @param url - url картинки
+ * @returns boolean
+ */
+const getIsValidImgUrl = (url: string | null): boolean => {
+  if (!url) return true;
+  const img = new Image();
+  img.src = url;
+  return img.complete && img.naturalHeight > 0;
+};
 
-//   console.log(prevButton);
+/**
+ * проверка на удаленное описание
+ * @param description - описание
+ * @returns boolean
+ */
+const getIsNotRemovedDescription = (description: string | null): boolean => {
+  return description !== REMOVED_DESCRIPTION;
+};
 
-//   const slides = slider?.querySelectorAll("#js-slide");
-
-//   const isWorking =
-//     slider && prevButton && nextButton && slides && slides.length > 0;
-
-//   if (isWorking) {
-//     const step = slider.scrollWidth / slides.length;
-//     prevButton.addEventListener("click", () => prevScroll(slider, step));
-
-//     nextButton.addEventListener("click", () => nextScroll(slider, step));
-
-//     slider.addEventListener("scroll", () =>
-//       onScroll(slider, prevButton, nextButton, step)
-//     );
-//   }
-// };
+/**
+ * проверка на HTML разметку
+ * @param description - описание
+ * @returns boolean
+ */
+const getIsNotHTML = (description: string | null): boolean => {
+  if (!description) return true;
+  const HTMLreg: RegExp = /\<[^>]+\>/g;
+  return !HTMLreg.test(description);
+};
 
 export const lib = {
   showError,
@@ -102,5 +107,8 @@ export const lib = {
   onScroll,
   prevScroll,
   nextScroll,
+  getIsValidImgUrl,
+  getIsNotRemovedDescription,
+  getIsNotHTML,
 };
 export * from "./hooks";
