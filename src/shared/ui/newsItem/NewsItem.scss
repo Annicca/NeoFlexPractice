@@ -47,16 +47,23 @@
       $letter-spacing: normal,
       $font-weight: var(--medium)
     );
+
+    @include media-mobile {
+      font-size: var(--font-16);
+    }
   }
 
   &__description {
     @include font-styles-ubuntu(
-      null,
       $color: var(--black),
       $line-height: var(--line-height-23),
       $letter-spacing: normal,
       $font-weight: var(--medium)
     );
+
+    @include media-mobile {
+      font-size: var(--font-14);
+    }
   }
 
   &__title,
