@@ -114,3 +114,5 @@ export const CARDS = [card1Src, card2Src, card3Src, card4Src];
 export const MOCK_PHOTO = require("/src/shared/assets/images/mock.png");
 
 export const REMOVED_DESCRIPTION = "[Removed]";
+
+export const LIMIT_REQUESTS = 100;

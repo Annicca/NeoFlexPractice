@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 import { newsApi } from "shared/api/newsApi";
 import { TNews } from "shared/types";
 import { lib } from "..";
+import { LIMIT_REQUESTS } from "shared/const";
 
 export const useNews = () => {
   const [news, setNews] = useState<TNews[]>([]);
@@ -17,7 +18,7 @@ export const useNews = () => {
     });
   }, [news]);
 
-  if (numberRequest === 100) return filterNews;
+  if (numberRequest === LIMIT_REQUESTS) return filterNews;
   useEffect(() => {
     setNumberRequest((numberRequest) => numberRequest + 1);
     newsApi.getNews().then((news) => {

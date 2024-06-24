@@ -14,14 +14,16 @@ export const ListNews: FC = () => {
   const nextBtnRef = useRef(null);
   const [step, setStep] = useState(0);
 
-  useEffect(() => {
+  const handleStepSlider = () => {
     const sliderStep = lib.getStep(sliderRef.current, news.length);
     if (sliderStep) {
       setStep(sliderStep);
     }
-  }, [sliderRef.current, news]);
+  };
 
-  if (news === undefined || news === null) {
+  useEffect(handleStepSlider, []);
+
+  if (!news) {
     return (
       <div className="news-loading">
         Sorry, an error occurred while downloading the news
