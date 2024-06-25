@@ -12,12 +12,15 @@
   --black1E: #1c1c1e;
   --black1C: #1c1c1c;
   --black29: #1d1929;
+  --black33: #00000033;
+  --black14: #00000014;
   --dark-blue: #0b132a;
   --brown: #b2a35f;
   --orange: #eb801d;
   --gray: #b2b2b233;
   --gray48: #2d3748;
   --grayB0: #9092b0;
+  --grayDA: #dadadada;
   --gray80: #808080;
   --gray178-opacity: rgba(178, 178, 178, 0.8);
   --gray178: rgba(178, 178, 178, 0);
@@ -25,6 +28,8 @@
   --shadow: #363a781a;
   --shadowb3: #bbbbbb33;
   --shadow14: #00000014;
+  --shadow187: rgba(187, 187, 187, 0.08);
+  --gradientGray: rgba(187, 187, 187, 0.2);
 
   //fonts
   --font-ubuntu: "Ubuntu", sans-serif;
@@ -49,6 +54,7 @@
   --line-height-16: 16px;
   --line-height-18: 18px;
   --line-height-22: 22px;
+  --line-height-23: 23px;
   --line-height-24: 24px;
   --line-height-27: 27px;
   --line-height-30: 30px;

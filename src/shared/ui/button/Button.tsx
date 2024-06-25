@@ -1,4 +1,4 @@
-import { FC, PropsWithChildren } from "react";
+import { FC, ForwardedRef, PropsWithChildren, forwardRef } from "react";
 import classnames from "classnames";
 import "./Button.scss";
 
@@ -6,16 +6,21 @@ type TButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
   mode?: "clear" | "error";
 };
 
-export const Button: FC<PropsWithChildren<TButtonProps>> = ({
-  children,
-  mode = "default",
-  className,
-  type = "button",
-  ...buttonProps
-}) => {
+export const Button = forwardRef(function Button(
+  props: TButtonProps,
+  ref: ForwardedRef<HTMLButtonElement>
+) {
+  const {
+    children,
+    mode = "default",
+    className,
+    type = "button",
+    ...buttonProps
+  } = props;
   return (
     <button
       type={type}
+      ref={ref}
       className={classnames(
         "button",
         {
@@ -29,4 +34,4 @@ export const Button: FC<PropsWithChildren<TButtonProps>> = ({
       {children}
     </button>
   );
-};
+});
