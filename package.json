@@ -59,6 +59,7 @@
     "axios": "^1.7.2",
     "classnames": "^2.5.1",
     "compose-function": "^3.0.3",
+    "react-hook-form": "^7.52.1",
     "react-router": "^6.23.1",
     "react-router-dom": "^6.23.1",
     "webpack-append": "^0.1.2"

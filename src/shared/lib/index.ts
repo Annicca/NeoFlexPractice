@@ -100,6 +100,20 @@ const getIsNotHTML = (description: string | null): boolean => {
   return !HTMLreg.test(description);
 };
 
+/**
+ * проверка подписки на новости
+ * @returns boolean
+ */
+
+const checkSubscribe = (): boolean => {
+  const email = localStorage.getItem("email");
+  if(email) {
+      return true;
+  } else {
+      return false;
+  }
+}
+
 export const lib = {
   showError,
   getCurrentDate,
@@ -110,5 +124,6 @@ export const lib = {
   getIsValidImgUrl,
   getIsNotRemovedDescription,
   getIsNotHTML,
+  checkSubscribe
 };
 export * from "./hooks";
