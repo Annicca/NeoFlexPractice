@@ -1,11 +1,12 @@
 import { FC } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { Button, List, ListItem, LogoBank } from "shared/ui";
 import { HEADER_LINKS } from "shared/const";
 import { TLink } from "shared/types";
 import { BurgerMenu } from "features";
 
 import "./Header.scss";
+
 
 export const Header: FC = () => {
   return (
@@ -17,9 +18,11 @@ export const Header: FC = () => {
           items={HEADER_LINKS}
           renderItem={(item: TLink) => (
             <ListItem className="nav__item" key={item.label}>
-              <Link to={item.href} className="nav__link">
+              <NavLink to={item.href} className={({ isActive }) =>
+                isActive ? "nav__link_active" : "nav__link"}
+              >
                 {item.label}
-              </Link>
+              </NavLink>
             </ListItem>
           )}
         />

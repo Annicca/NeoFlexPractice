@@ -34,7 +34,7 @@
 
   &__link {
     transition: color 0.3s ease-in-out;
-    &:hover {
+    &:hover, &_active {
       color: var(--brown);
     }
   }

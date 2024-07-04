@@ -2,6 +2,7 @@ import { AppRouters, RoutersPath } from "shared/const";
 import type { RouteObject } from "react-router";
 import { createBrowserRouter } from "react-router-dom";
 import { HomePage, Layout } from "pages";
+import { LoanPage } from "pages/loan";
 
 const childrenRoutes: Record<AppRouters, RouteObject> = {
   [AppRouters.HOME]: {
@@ -11,7 +12,7 @@ const childrenRoutes: Record<AppRouters, RouteObject> = {
   },
   [AppRouters.CREDIT_CARD]: {
     path: RoutersPath.creditCard,
-    element: <HomePage />,
+    element: <LoanPage />,
   },
   [AppRouters.PRODUCT]: {
     path: RoutersPath.product,
