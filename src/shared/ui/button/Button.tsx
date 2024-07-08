@@ -1,4 +1,4 @@
-import { FC, ForwardedRef, PropsWithChildren, forwardRef } from "react";
+import { ForwardedRef, forwardRef } from "react";
 import classnames from "classnames";
 import "./Button.scss";
 

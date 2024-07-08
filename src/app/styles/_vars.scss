@@ -6,8 +6,9 @@
   --white: #fff;
   --white-opacity: #ffffffcf;
   --main-color: #f5f4ff;
-  --pink: #b4387a;
+  --pink: #b4387a; 
   --blue-gray: #7796c0;
+  --blue-grayCB: rgba(203, 213, 224, 0.624);
   --black: #000;
   --black1E: #1c1c1e;
   --black1C: #1c1c1c;
@@ -17,6 +18,7 @@
   --dark-blue: #0b132a;
   --brown: #b2a35f;
   --orange: #eb801d;
+  --light-yelow: rgba(254, 235, 200, 0.56);
   --gray: #b2b2b233;
   --gray48: #2d3748;
   --grayB0: #9092b0;
@@ -25,8 +27,10 @@
   --gray178-opacity: rgba(178, 178, 178, 0.8);
   --gray178: rgba(178, 178, 178, 0);
   --gray65: #4f5665;
+  --gray3d: #3D3D3D;
   --shadow: #363a781a;
   --shadowb3: #bbbbbb33;
+  --shadow33: #00000033;
   --shadow14: #00000014;
   --shadow187: rgba(187, 187, 187, 0.08);
   --gradientGray: rgba(187, 187, 187, 0.2);
@@ -60,8 +64,10 @@
   --line-height-30: 30px;
   --line-height-36: 36px;
   --line-height-44: 44px;
+  --line-height-48: 48px;
   --line-height-50: 50px;
 
   //letter-spacing
   --letter-spacing-2: 0.02;
+  --letter-spacing-02: 0.02em;
 }

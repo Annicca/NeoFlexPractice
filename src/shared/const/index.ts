@@ -9,8 +9,8 @@ export enum AppRouters {
 }
 
 export const RoutersPath: Record<AppRouters, string> = {
-  [AppRouters.HOME]: "",
-  [AppRouters.CREDIT_CARD]: "credit-card",
+  [AppRouters.HOME]: "/",
+  [AppRouters.CREDIT_CARD]: "/credit-card",
   [AppRouters.PRODUCT]: "product",
   [AppRouters.ACCOUNT]: "account",
   [AppRouters.RESOURCES]: "resources",
@@ -104,7 +104,7 @@ export const FEATURES = [
   "Work anywhere in the world",
 ];
 
-const card1Src = require("/src/shared/assets/images/card1.png");
+export const card1Src = require("/src/shared/assets/images/card11.png");
 const card2Src = require("/src/shared/assets/images/card2.png");
 const card3Src = require("/src/shared/assets/images/card3.png");
 const card4Src = require("/src/shared/assets/images/card4.png");

@@ -6,3 +6,4 @@ export { Currency } from "./currency";
 export { YouCanUse } from "./youCanUse";
 export { ChooseCards } from "./chooseCards";
 export { News } from "./news";
+export {InfoCard } from "./infoCard";

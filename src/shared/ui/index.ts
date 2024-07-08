@@ -9,3 +9,5 @@ export { EmailInput } from "./emailInput";
 export { CurrencyItem } from "./currencyItem";
 export { Image } from "./image";
 export { NewsItem } from "./newsItem";
+export {Loader } from "./loader";
+export {ConditionItem } from "./conditionItem";
