@@ -15,6 +15,7 @@ module.exports = {
   devServer: {
     watchFiles: path.join(__dirname, "src"),
     port: 3000,
+    historyApiFallback: true,
   },
   plugins: [
     new HtmlWebpackPlugin({

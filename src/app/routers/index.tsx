@@ -1,8 +1,7 @@
 import { AppRouters, RoutersPath } from "shared/const";
 import type { RouteObject } from "react-router";
 import { createBrowserRouter } from "react-router-dom";
-import { HomePage, Layout } from "pages";
-import { LoanPage } from "pages/loan";
+import { HomePage, LoanPage, Layout } from "pages";
 
 const childrenRoutes: Record<AppRouters, RouteObject> = {
   [AppRouters.HOME]: {

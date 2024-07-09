@@ -114,6 +114,15 @@ const checkSubscribe = (): boolean => {
   }
 }
 
+/**
+ * замена пробелов на тире
+ * @param text - строка
+ * @returns строка, где пробелы заменены на тире
+ */
+const removeWhiteSpace = (text: string) => {
+  return text.replace(/\s/g, "-");
+}
+
 export const lib = {
   showError,
   getCurrentDate,
@@ -124,6 +133,7 @@ export const lib = {
   getIsValidImgUrl,
   getIsNotRemovedDescription,
   getIsNotHTML,
-  checkSubscribe
+  checkSubscribe,
+  removeWhiteSpace
 };
 export * from "./hooks";

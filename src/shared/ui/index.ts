@@ -11,3 +11,4 @@ export { Image } from "./image";
 export { NewsItem } from "./newsItem";
 export {Loader } from "./loader";
 export {ConditionItem } from "./conditionItem";
+export {Tab} from "./tab";

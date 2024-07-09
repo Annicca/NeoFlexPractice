@@ -1,4 +1,5 @@
-import { TLink } from "shared/types";
+import { TAboutCardItem, TCondition, TLink } from "shared/types";
+import { BagIcon, CalendarIcon, ClockIcon, CreditCardIcon, MoneyIcon } from "shared/ui/icons";
 
 export enum AppRouters {
   HOME = "home",
@@ -10,7 +11,7 @@ export enum AppRouters {
 
 export const RoutersPath: Record<AppRouters, string> = {
   [AppRouters.HOME]: "/",
-  [AppRouters.CREDIT_CARD]: "/credit-card",
+  [AppRouters.CREDIT_CARD]: "credit-card",
   [AppRouters.PRODUCT]: "product",
   [AppRouters.ACCOUNT]: "account",
   [AppRouters.RESOURCES]: "resources",
@@ -116,3 +117,37 @@ export const MOCK_PHOTO = require("/src/shared/assets/images/mock.png");
 export const REMOVED_DESCRIPTION = "[Removed]";
 
 export const LIMIT_REQUESTS = 100;
+
+export const CONDITIONS: TCondition[] = [
+  {title: "Up to 160 days", description: "No percent", toolTip: "When repaying the full debt up to 160 days."},
+  {title: "Up to 600 000 ₽", description: "Credit limit", toolTip:"Over the limit willaccrue percent"},
+  {title: "0 ₽", description: "Card service is free", toolTip: "Promotion valid until December 31, 2022."},
+];
+
+export const ABOUT_CARD_ITEMS: TAboutCardItem[] = [
+  {
+    title: "Up to 50 000 ₽",
+    description: "Cash and transfers without commission and percent",
+    icon: <MoneyIcon />
+  },
+  {
+    title: "Up to 160 days",
+    description: "Without percent on the loan",
+    icon: <CalendarIcon />
+  },
+  {
+    title: "Free delivery",
+    description: "We will deliver your card by courier at a convenient place and time for you",
+    icon: <ClockIcon />
+  },
+  {
+    title: "Up to 12 months",
+    description: "No percent. For equipment, clothes and other purchases in installments",
+    icon: <BagIcon />
+  },
+  {
+    title: "Convenient deposit and withdrawal",
+    description: "At any ATM. Top up your credit card for free with cash or transfer from other cards",
+    icon: <CreditCardIcon />
+  },
+]

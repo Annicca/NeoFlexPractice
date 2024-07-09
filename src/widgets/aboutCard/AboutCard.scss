@@ -1,0 +1,54 @@
+.about {
+    margin-top: 48px;
+    @include flex-container;
+    flex-wrap: wrap;
+    gap: 40px;
+
+    @include media-mobile {
+        margin-top: 20px;
+        gap: 20px;
+    }
+
+    &__item {
+        flex: 1 0 405px;
+        align-self: stretch;
+        width: 405px;
+        padding: 30px;
+        border-radius: 28px;
+        background-color: var(--grayEE);
+        box-shadow: 0px 2px 4px 0px var(--shadow33), 0px 0px 8px 0px var(--shadow14);
+
+        &:nth-of-type(2n) {
+            background-color: var(--blue-grayB2);
+        }
+
+        @include media-mobile {
+            flex: 1 0 100%;
+            width: 100%;
+        }
+    }
+
+    &__title {
+        padding-top: 24px;
+        @include font-styles-ubuntu(
+            $font-size: var(--font-30),
+            $line-height: var(--line-height-44)
+        );
+
+        @include media-mobile {
+            @include font-styles-ubuntu(
+                $font-size: var(--font-20),
+                $line-height: var(--line-height-22)
+            );
+        }
+    }
+
+
+    &__description {
+        padding-top: 16px;
+        @include font-styles-ubuntu(
+            $font-weight: var(--medium),
+            $line-height: var(--line-height-16)
+        );
+    }
+}

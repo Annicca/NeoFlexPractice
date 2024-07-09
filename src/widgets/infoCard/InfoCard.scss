@@ -5,13 +5,15 @@
     background: linear-gradient(180.8deg, var(--blue-grayCB) 34.33%, var(--light-yelow) 64.27%);
     box-shadow: 0px 2px 4px 0px var(--shadow33), 0px 0px 8px 0px var(--shadow14);
     border-radius: 28px;
-    
-    &:hover{
-        .info-card__image {
-            transform: rotate(17deg);
+
+    @media(hover: hover) {
+        &:hover{
+            .info-card__image {
+                transform: rotate(17deg);
+            }
         }
     }
-
+    
     @include media-tablet {
         flex-direction: column;
         padding: 40px;

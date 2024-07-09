@@ -1,3 +1,5 @@
+import { ReactElement, ReactNode } from "react";
+
 export type TLink = {
   label: string;
   href: string;
@@ -21,3 +23,20 @@ export type TNews = {
   url: string;
   description: string | null;
 };
+
+export type TCondition = {
+  title: string,
+  description: string,
+  toolTip: string;
+}
+
+export type TTab = {
+  label: string;
+  children: ReactNode;
+}
+
+export type TAboutCardItem = {
+  icon: ReactNode;
+  title: string;
+  description: string;
+}

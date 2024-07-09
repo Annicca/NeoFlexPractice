@@ -1,0 +1,43 @@
+.detail-info {
+    margin-top: 48px;
+
+    & .tab-list {
+        @include flex-container-start;
+        position: relative;
+
+        @include media-mobile {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        &:before {
+            content: " ";
+            position: absolute;
+            width: 100%;
+            border-bottom: 2px solid var(--gray8033);
+            top: 29px;
+
+            @include media-mobile {
+                display: none;
+            }
+        }
+    }
+
+    & .tab-btn {
+        padding: 0 16px 12px;
+        @include font-styles-ubuntu(
+            $font-weight: var(--medium),
+            $line-height: var(--line-height-16),
+            $color: var(--brown7B)
+        );
+
+        @include media-mobile {
+            font-size: var(--font-14);
+            padding: 10px 0;
+        }
+
+        &__active {
+            border-bottom: 2px solid var(--brown7B);
+        }
+    }
+}
