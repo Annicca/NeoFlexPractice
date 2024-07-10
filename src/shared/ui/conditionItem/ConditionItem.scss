@@ -1,34 +1,5 @@
 .condition {
     flex: 1 0 auto;
-    cursor: pointer;
-    position: relative;
-
-    @media(hover: hover) {
-        &[data-tooltip] {
-            &::after {
-                content: attr(data-tooltip);
-                position: absolute;
-                visibility: hidden;
-                left: -32px;
-                width: 180px;
-                top: 100%;   
-                z-index: 1;
-                transform: translateY(0);
-                background-color: var(--gray3d);
-                text-align: left;
-                color: var(--white);
-                opacity: 0;
-            }
-    
-            &:hover::after {
-                visibility: visible;
-                padding: 8px;
-                opacity: 1;
-                transform: translateY(5px);
-                transition: opacity 0.3s linear, transform 0.5s ease-in-out;
-            }
-        }
-    }
 
     &__title {
         @include font-styles-ubuntu(
@@ -49,4 +20,21 @@
             $font-weight: var(--medium)
         );
     }
+}
+
+.condition-tooltip {
+    left: -32px;
+    width: 180px;
+    top: 100%;   
+    z-index: 1;
+    transform: translateY(0);
+    background-color: var(--gray3d);
+    text-align: left;
+    color: var(--white);
+}
+
+.tooltip-container__content_open.condition-tooltip{
+    padding: 8px;
+    transform: translateY(5px);
+    transition: opacity 0.3s linear, transform 0.5s ease-in-out;
 }

@@ -15,3 +15,5 @@ export {Tab} from "./tab";
 export {AboutItem} from "./aboutItem";
 export {RateItem} from "./rateItem";
 export {CashbackItem} from "./cashbackItem";
+export {Accordion} from "./accordion";
+export {Tooltip} from "./tooltip";

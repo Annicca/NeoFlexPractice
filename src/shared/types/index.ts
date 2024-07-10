@@ -51,3 +51,8 @@ export type TCashback = {
   name: string,
   isUp: boolean
 }
+
+export type TFaq = {
+  question: string;
+  answer: string;
+}

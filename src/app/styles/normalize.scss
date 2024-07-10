@@ -370,3 +370,15 @@ button {
   border: none;
   cursor: pointer;
 }
+
+details > summary {
+  list-style-type: none;
+
+  &::marker {
+    display: none;
+  }
+
+  &::-webkit-details-marker {
+    display: none;
+  }
+}

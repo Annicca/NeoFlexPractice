@@ -1,0 +1,24 @@
+.details {
+    width: 100%;
+
+    &[open] {
+        .details__arrow{
+            transform: rotate(180deg);
+        }
+    }
+
+    &__arrow{
+        flex: 0 0 24px;
+        transition: transform .2s linear;
+    }
+
+    &__summary {
+        @include flex-container;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    &__content {
+        margin: 0;
+    }
+}

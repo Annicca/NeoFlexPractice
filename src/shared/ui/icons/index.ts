@@ -10,3 +10,4 @@ export {CalendarIcon } from "./calendarIcon";
 export {ClockIcon} from "./clockIcon";
 export {BagIcon} from "./bagIcon";
 export {CreditCardIcon} from "./creditCardIcon";
+export {ArrowIcon} from "./arrowIcon";
