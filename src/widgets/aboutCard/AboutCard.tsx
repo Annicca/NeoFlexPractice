@@ -11,7 +11,7 @@ export const AboutCard:FC = () => {
             items = {ABOUT_CARD_ITEMS}
             renderItem={(item) => 
                 <ListItem key = {item.title} className="about__item">
-                    <AboutItem {...item} />
+                    <AboutItem aboutItem={item} />
                 </ListItem>
             }
         />

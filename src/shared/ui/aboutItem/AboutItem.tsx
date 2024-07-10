@@ -1,8 +1,13 @@
+import { FC } from "react";
 import { TAboutCardItem } from "shared/types";
 
 import "./AboutItem.scss";
 
-export const AboutItem = (aboutItem: TAboutCardItem) => {
+type TAboutItem = {
+    aboutItem: TAboutCardItem
+}
+
+export const AboutItem:FC<TAboutItem> = ({aboutItem}) => {
     return(
         <div className="about-item">
             {aboutItem.icon}

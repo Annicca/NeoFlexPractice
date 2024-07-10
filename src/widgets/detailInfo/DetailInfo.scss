@@ -31,6 +31,10 @@
             $color: var(--brown7B)
         );
 
+        @include media-tablet {
+            padding: 0 10px 12px;
+        }
+
         @include media-mobile {
             font-size: var(--font-14);
             padding: 10px 0;

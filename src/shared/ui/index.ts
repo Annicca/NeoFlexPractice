@@ -14,3 +14,4 @@ export {ConditionItem } from "./conditionItem";
 export {Tab} from "./tab";
 export {AboutItem} from "./aboutItem";
 export {RateItem} from "./rateItem";
+export {CashbackItem} from "./cashbackItem";

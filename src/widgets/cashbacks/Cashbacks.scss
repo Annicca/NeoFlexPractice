@@ -1,0 +1,18 @@
+.cashbacks {
+    margin-top: 30px;
+    @include flex-container;
+    flex-wrap: wrap;
+    gap: 40px;
+
+    &__item {
+        flex: 1 1 405px;
+        background-color: var(--blue-green);
+        box-shadow: 0px 2px 4px 0px var(--shadow33), 0px 0px 8px 0px var(--shadow14);
+        border-radius: 28px;
+
+
+        &:nth-last-of-type(2n) {
+            background-color: var(--grayEE);
+        }
+    }
+}

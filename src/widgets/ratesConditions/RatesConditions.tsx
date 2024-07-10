@@ -11,7 +11,7 @@ export const RatesConditions = () => {
             items={RATES_AND_CONDITIONS}
             renderItem={(item: TRates) => 
                 <ListItem key = {item.title} className="rates__item">
-                    <RateItem {...item}/>
+                    <RateItem rateItem={item}/>
                 </ListItem>
             }
         />

@@ -1,4 +1,4 @@
-import { TAboutCardItem, TCondition, TLink, TRates } from "shared/types";
+import { TAboutCardItem, TCashback, TCondition, TLink, TRates } from "shared/types";
 import { BagIcon, CalendarIcon, ClockIcon, CreditCardIcon, MoneyIcon } from "shared/ui/icons";
 
 export enum AppRouters {
@@ -183,5 +183,38 @@ export const RATES_AND_CONDITIONS: TRates[] = [
       "60 ₽ — SMS or push notifications", 
       "0 ₽ — card statement, information about transactions in the online bank"
     ]
+  },
+]
+
+export const CASHBACK_ITEMS: TCashback[] = [
+  {
+    name: "For food delivery, cafes and restaurants",
+    percent: 5,
+    isUp: false
+  },
+  {
+    name: "In supermarkets with our subscription",
+    percent: 5,
+    isUp: false
+  },
+  {
+    name: "In clothing stores and children's goods",
+    percent: 2,
+    isUp: false
+  },
+  {
+    name: "Other purchases and payment of services and fines",
+    percent: 1,
+    isUp: false
+  },
+  {
+    name: "Shopping in online stores",
+    percent: 3,
+    isUp: true
+  },
+  {
+    name: "Purchases from our partners",
+    percent: 30,
+    isUp: false
   },
 ]

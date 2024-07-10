@@ -1,8 +1,13 @@
+import { FC } from "react";
 import { TRates } from "shared/types";
 
 import "./RateItem.scss";
 
-export const RateItem = (rateItem: TRates) => {
+type TRateItem = {
+    rateItem: TRates
+}
+
+export const RateItem:FC<TRateItem> = ({rateItem}) => {
     return(
         <div className="rate-item">
             <div className="rate-item__name">{rateItem.title}</div>

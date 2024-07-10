@@ -45,3 +45,9 @@ export type TRates = {
   title: string;
   description: string | string[];
 }
+
+export type TCashback = {
+  percent: number,
+  name: string,
+  isUp: boolean
+}

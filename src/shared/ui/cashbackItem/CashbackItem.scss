@@ -1,0 +1,18 @@
+.cashback {
+    min-height: 160px;
+    padding: 30px;
+    @include flex-container-column;
+    justify-content: space-between;
+
+    &__name {
+        line-height: var(--line-height-23);
+        color: var(--gray43);
+    }
+
+    &__persent {
+        @include font-styles-ubuntu(
+            $font-size: var(--font-36),
+            $line-height: var(--line-height-53)
+        );
+    }
+}

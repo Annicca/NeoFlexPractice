@@ -10,3 +10,4 @@ export {InfoCard } from "./infoCard";
 export {AboutCard} from './aboutCard';
 export {DetailInfo } from "./detailInfo";
 export {RatesConditions} from "./ratesConditions";
+export {Cashbacks} from "./cashbacks";
