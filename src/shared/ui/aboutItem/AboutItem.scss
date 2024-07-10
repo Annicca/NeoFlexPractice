@@ -1,0 +1,27 @@
+.about-item {
+    padding: 30px;
+
+    &__title {
+        padding-top: 24px;
+        @include font-styles-ubuntu(
+            $font-size: var(--font-30),
+            $line-height: var(--line-height-44)
+        );
+
+        @include media-mobile {
+            @include font-styles-ubuntu(
+                $font-size: var(--font-20),
+                $line-height: var(--line-height-22)
+            );
+        }
+    }
+
+
+    &__description {
+        padding-top: 16px;
+        @include font-styles-ubuntu(
+            $font-weight: var(--medium),
+            $line-height: var(--line-height-16)
+        );
+    }
+}

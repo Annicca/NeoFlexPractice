@@ -1,0 +1,25 @@
+.rate-item {
+    display: grid;
+    padding-bottom: 24px;
+    grid-template-columns: 1fr 3fr;
+    justify-content: start;
+    gap: 70px;
+
+    @include media-mobile {
+        grid-template-columns: 1fr 2fr;
+        gap: 15px;
+    }
+
+    &__name, &__description {
+        line-height: var(--line-height-16);
+        hyphens: manual;
+
+        @include media-mobile {
+            font-size: var(--font-size-14);
+        }
+    }
+
+    &__description {
+        color: var( --gray43)
+    }
+}

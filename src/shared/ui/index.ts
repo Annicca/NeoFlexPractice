@@ -12,3 +12,5 @@ export { NewsItem } from "./newsItem";
 export {Loader } from "./loader";
 export {ConditionItem } from "./conditionItem";
 export {Tab} from "./tab";
+export {AboutItem} from "./aboutItem";
+export {RateItem} from "./rateItem";

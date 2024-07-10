@@ -1,0 +1,11 @@
+.rates {
+    margin-top: 40px;
+    @include flex-container-column;
+    gap: 25px;
+    width: 100%;
+    max-width: 1015px;
+
+    &__item:not(:last-of-type) {
+        border-bottom: 1px solid var(--blue-grayAC);
+    }
+}

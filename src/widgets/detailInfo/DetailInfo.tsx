@@ -1,5 +1,5 @@
 import { TabList } from "features"
-import { AboutCard } from "widgets";
+import { AboutCard, RatesConditions } from "widgets";
 import { Tab } from "shared/ui"
 
 import "./DetailInfo.scss";
@@ -13,7 +13,7 @@ export const DetailInfo = () => {
                     <AboutCard />
                 </Tab>
                 <Tab label="Rates and conditions">
-                    <p>conditions</p>
+                    <RatesConditions />
                 </Tab>
                 <Tab label="Cashback">
                     <p>cashback</p>

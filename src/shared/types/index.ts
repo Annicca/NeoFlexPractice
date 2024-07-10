@@ -40,3 +40,8 @@ export type TAboutCardItem = {
   title: string;
   description: string;
 }
+
+export type TRates = {
+  title: string;
+  description: string | string[];
+}
