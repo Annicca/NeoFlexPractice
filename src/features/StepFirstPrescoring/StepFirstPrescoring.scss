@@ -7,6 +7,10 @@
     box-shadow: 0px 2px 4px 0px var(--shadow33), 0px 0px 8px 0px var(--shadow14);
     background-color: var(--white);
 
+    @include media-mobile {
+        padding: 20px;
+    }
+
     &__contact {
         width: 100%;
         padding: 32px 0 24px;
@@ -24,9 +28,14 @@
     &__inputs {
         width: 100%;
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(auto-fill, minmax(297px, 1fr));
         grid-template-rows: auto;
         gap: 16px;
+
+        @include media-mobile {
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 10px;
+        }
     }
 
     &__continue {

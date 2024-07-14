@@ -16,7 +16,6 @@
     }
 
     &__item {
-        padding: 30px;
         border: 1px solid  var(--blueF0);
 
         &:not(:last-child) {
@@ -27,8 +26,11 @@
 
 .question {
     &__content {
-        padding-top: 60px;
+        padding: 30px;
         font-weight: var(--regular);
         color: var(--brown7B);
+    }
+    &__name {
+        padding: 30px;
     }
 }

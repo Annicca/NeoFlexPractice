@@ -31,8 +31,6 @@ export const StepFirstPrescoring = () => {
         });
     }
 
-    console.log(loading)
-
     const getAmount = Number(watch("amount"))
 
     const setAmount = (amount: number) => {

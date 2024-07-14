@@ -155,6 +155,15 @@ const validateAge = (value: string): string | boolean  => {
   return false;
 };
 
+const scrollTo = (id: string) => {
+  const element = document.querySelector(id)
+
+  element?.scrollIntoView({
+    behavior: "smooth",
+    block: "start"
+  })
+}
+
 export const lib = {
   showError,
   getCurrentDate,
@@ -167,6 +176,7 @@ export const lib = {
   getIsNotHTML,
   checkSubscribe,
   removeWhiteSpace,
-  validateAge
+  validateAge,
+  scrollTo
 };
 export * from "./hooks";

@@ -2,8 +2,13 @@
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1px 1fr;
-    grid-template-rows: 1fr;
-    gap: 40px;
+    grid-template-rows: auto;
+    gap: 3%;
+
+    @include media-tablet {
+        grid-template-columns: 1fr; 
+        gap: 10px;
+    }
 
     &__inner {
         @include flex-container-column;

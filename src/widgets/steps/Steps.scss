@@ -20,9 +20,9 @@
     &__list {
         margin-top: 14px;
         @include flex-container;
-        justify-content: space-between;
+        justify-content: flex-start;
         align-items: flex-start;
-        gap: 10px;
+        gap: 8%;
 
         @include media-mobile {
             flex-direction: column;

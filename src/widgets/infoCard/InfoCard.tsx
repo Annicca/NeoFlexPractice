@@ -1,10 +1,11 @@
 import { FC } from "react";
 import { card1Src, CONDITIONS } from "shared/const";
 import { Button, ConditionItem, Image, List } from "shared/ui";
-
 import './InfoCard.scss';
+import { lib } from "shared/lib";
 
 export const InfoCard:FC = () => {
+    
     return (
         <div className = "info-card">
             <div className="info-card__inner">
@@ -16,7 +17,7 @@ export const InfoCard:FC = () => {
                     items={CONDITIONS}
                     renderItem={(item) => <ConditionItem key={item.title} {...item} />}
                 />
-                <Button className="info-card__btn">
+                <Button className="info-card__btn" onClick={() => lib.scrollTo("#form")}>
                     Apply for card
                 </Button>
             </div>

@@ -4,6 +4,10 @@
     flex-wrap: wrap;
     gap: 40px;
 
+    @include media-mobile {
+        gap: 20px;
+    }
+
     &__item {
         flex: 1 1 405px;
         background-color: var(--blue-green);

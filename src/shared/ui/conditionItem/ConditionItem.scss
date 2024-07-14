@@ -1,7 +1,8 @@
 .condition {
-    flex: 1 0 auto;
+    flex: 1 1 160px;
 
     &__title {
+        padding-bottom: 5px;
         @include font-styles-ubuntu(
             $font-size: var(--font-20),
             $font-weight: var(--bold),
