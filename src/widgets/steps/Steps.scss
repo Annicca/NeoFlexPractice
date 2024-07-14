@@ -1,0 +1,40 @@
+.steps {
+    margin-top: 48px;
+    text-align: center;
+
+    &__title {
+        margin: 0 auto;
+        @include font-styles-ubuntu(
+            $font-size: var(--font-30),
+            $line-height: var(--line-height-44)
+        );
+
+        @include media-mobile {
+            @include font-styles-ubuntu(
+                $font-size: var(--font-24),
+                $line-height: var(--line-height-27)
+            );
+        }
+    }
+
+    &__list {
+        margin-top: 14px;
+        @include flex-container;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 10px;
+
+        @include media-mobile {
+            flex-direction: column;
+            row-gap: 20px;
+        }
+    }
+
+    &__item {
+        flex: 0 1 335px;
+
+        @include media-mobile {
+            flex: 0 1 100%;
+        }
+    }
+}

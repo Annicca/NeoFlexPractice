@@ -1,10 +1,12 @@
-import { DetailInfo, InfoCard } from "widgets"
+import { DetailInfo, FormPrescoring, InfoCard, Steps } from "widgets"
 
 const LoanPage = () => {
     return(
         <main>
             <InfoCard />
             <DetailInfo/>
+            <Steps />
+            <FormPrescoring />
         </main>
     )
 }

@@ -11,3 +11,5 @@ export {ClockIcon} from "./clockIcon";
 export {BagIcon} from "./bagIcon";
 export {CreditCardIcon} from "./creditCardIcon";
 export {ArrowIcon} from "./arrowIcon";
+export {SuccessIcon} from "./successIcon";
+export {ErrorIcon} from "./errorIcon";

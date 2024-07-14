@@ -1,0 +1,6 @@
+.step-container {
+    @include font-styles-ubuntu(
+        $font-weight: var(--medium),
+        $line-height: var(--font-16)
+    );
+}

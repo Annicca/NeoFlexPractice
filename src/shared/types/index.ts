@@ -56,3 +56,20 @@ export type TFaq = {
   question: string;
   answer: string;
 }
+
+export type TPrescoring = {
+  amount: number,
+  term: number,
+  firstName: string,
+  lastName: string,
+  middleName: string | null,
+  email: string,
+  birthdate: string | Date,
+  passportSeries: string,
+  passportNumber: string
+}
+
+export type TOption = {
+  label: string;
+  value: string | number;
+}

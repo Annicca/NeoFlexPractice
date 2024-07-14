@@ -1,0 +1,11 @@
+.title-form {
+    @include flex-container;
+    justify-content: space-between;
+    align-items: center;
+    &__title {
+        @include font-styles-ubuntu(
+            $font-size: var(--font-30),
+            $line-height: var(--line-height-30)
+        );
+    }
+}

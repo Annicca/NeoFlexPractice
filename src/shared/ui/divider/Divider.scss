@@ -1,0 +1,16 @@
+.divider-container {
+    width: 100%;
+    padding-inline: 0;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    justify-content: start;
+    align-items: start;
+
+    &_left {
+        grid-template-columns: 1fr auto;
+    }
+}
+
+.divider {
+    align-self: center;
+}

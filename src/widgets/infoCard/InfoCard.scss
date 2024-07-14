@@ -87,13 +87,13 @@
     &__conditions {
         @include flex-container-start;
         column-gap: 20%;
+        row-gap: 20px;
+        flex-wrap: wrap;
         
         @include media-tablet {
             width: 100%;
             column-gap: normal;
             justify-content: space-between;
-            flex-wrap: wrap;
-            row-gap: 20px;
         }
 
         @include media-mobile {
