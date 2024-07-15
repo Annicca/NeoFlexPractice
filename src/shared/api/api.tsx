@@ -1,4 +1,4 @@
-import axios from "axios";
+import axios, { AxiosError } from "axios";
 import { lib } from "shared/lib";
 import { TPrescoring } from "shared/types";
 
@@ -18,13 +18,14 @@ const instance = axios.create({
  * @returns 
  */
 const emailSubscribe = async (email: string) => {
-    return instance.post("/email", { email: email })
-       .then(response => {
-            if(response.status === 200) {
-                localStorage.setItem("email", email);
-            }
-       })
-       .catch(error => lib.showError(error));
+    try {
+        const response  = await instance.post("/email", { email: email });
+        if(response.status === 200) {
+            localStorage.setItem("email", email);
+        }
+    } catch(error) {
+        lib.showError(error as AxiosError)
+    }
 }
 
 /**
@@ -32,13 +33,15 @@ const emailSubscribe = async (email: string) => {
  * @param data - данные формы
  */
 const apllicatioPrescoring = async (data: TPrescoring) => {
-
-    instance.post("/application", data)
-    .then(response => {
+    try {
+        const response = await instance.post("/application", data)
         if(response.status === 200) {
             console.log(response.data);
         }
-    }).catch(error => {throw new Error(error)});
+    } catch (error) {
+        lib.showError(error as AxiosError)
+        throw error;
+    }
 }
 
 export const api = {emailSubscribe, apllicatioPrescoring}

@@ -13,7 +13,7 @@ export const GetNewsForm = () => {
     event.preventDefault();
     if(emailRef.current?.value){
       await api.emailSubscribe(emailRef.current?.value)
-        .then(()=> setIsSubscribed(true))
+      setIsSubscribed(true)
     }
   };
 

@@ -21,14 +21,13 @@ export const StepFirstPrescoring = () => {
     const onSubmit = async (data: TPrescoring) => {
         setLoading(true);
         setError(null);
-        api.apllicatioPrescoring(data)
-        .then(() => {
+        try {
+            await api.apllicatioPrescoring(data);
             setLoading(false)
-        })
-        .catch((err) => {
-            setError(err.message);
+        } catch {
+            setError("Простите, нам не удалось отправить вашу заявку");
             setLoading(false)
-        });
+        }
     }
 
     const getAmount = Number(watch("amount"))
