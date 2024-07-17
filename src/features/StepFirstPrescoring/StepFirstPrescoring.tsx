@@ -23,10 +23,10 @@ export const StepFirstPrescoring = () => {
         setError(null);
         try {
             await api.apllicatioPrescoring(data);
-            setLoading(false)
         } catch {
             setError("Простите, нам не удалось отправить вашу заявку");
-            setLoading(false)
+        } finally {
+            setLoading(false);
         }
     }
 

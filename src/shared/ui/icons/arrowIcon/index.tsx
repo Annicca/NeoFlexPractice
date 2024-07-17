@@ -13,7 +13,7 @@ export const ArrowIcon: FC<TIcon> = ({
         className={className} 
         fill="none" 
         xmlns="http://www.w3.org/2000/svg">
-            <path d="M13 1L7 7L1 1" stroke="#33363F" stroke-width="2"/>
+            <path d="M13 1L7 7L1 1" stroke="#33363F" strokeWidth="2"/>
         </svg>
     )
 }
