@@ -10,9 +10,10 @@ import "./MovingMenu.scss";
 
 type TMovingMenu = {
   isOpen: boolean;
+  toggleMenu: () => void;
 };
 
-export const MovingMenu: FC<TMovingMenu> = ({ isOpen }) => {
+export const MovingMenu: FC<TMovingMenu> = ({ isOpen, toggleMenu }) => {
   return (
     <div
       className={classNames("menu-moving", { ["menu-moving_open"]: isOpen })}
@@ -21,7 +22,7 @@ export const MovingMenu: FC<TMovingMenu> = ({ isOpen }) => {
         className="menu-moving__list"
         items={HEADER_LINKS}
         renderItem={(item: TLink) => (
-          <ListItem className="menu-moving__item" key={item.label}>
+          <ListItem className="menu-moving__item" key={item.label} onClick={toggleMenu}>
             <Link to={item.href} className="menu-moving__link">
               {item.label}
             </Link>

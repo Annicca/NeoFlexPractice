@@ -2,7 +2,7 @@ import { ForwardedRef, ReactNode, forwardRef } from "react";
 
 export type TListProps<T> = React.HTMLAttributes<HTMLUListElement> & {
   items: T[];
-  renderItem: (item: T, index?: number) => ReactNode;
+  renderItem: (item: T, index: number) => ReactNode;
 };
 
 const ListInner = <T,>(

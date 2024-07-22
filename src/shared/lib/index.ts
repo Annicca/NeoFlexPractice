@@ -100,6 +100,70 @@ const getIsNotHTML = (description: string | null): boolean => {
   return !HTMLreg.test(description);
 };
 
+/**
+ * проверка подписки на новости
+ * @returns boolean
+ */
+
+const checkSubscribe = (): boolean => {
+  const email = localStorage.getItem("email");
+  if(email) {
+      return true;
+  } else {
+      return false;
+  }
+}
+
+/**
+ * замена пробелов на тире
+ * @param text - строка
+ * @returns строка, где пробелы заменены на тире
+ */
+const removeWhiteSpace = (text: string) => {
+  return text.replace(/\s/g, "-");
+}
+
+/**
+ * проверка на 18 летний возраст
+ * @param value строка даты
+ * @returns boolean или срока ошибки
+ */
+const validateAge = (value: string): string | boolean  => {
+  const valueWithoutDash = value.replace(/[^\d]/g, '');
+
+  if (valueWithoutDash.length === 8) {
+    const arrBirth = value.split("-");
+    const birth = new Date(Number(arrBirth[0]), Number(arrBirth[1]) - 1, Number(arrBirth[2]));
+    let today = new Date();
+
+    if ((birth.getFullYear() != Number(arrBirth[0])) || (birth.getMonth() + 1 != Number(arrBirth[1])) || (birth.getDate() != Number(arrBirth[2]))) {
+      return "Incorrect date of birth";
+    }
+
+
+    const yearsOld18 = new Date();
+    yearsOld18.setFullYear(today.getFullYear() - 18)
+
+
+    if (birth > yearsOld18) {
+      return "You must be at least 18 years old"
+    }
+
+    return true;
+  }
+
+  return false;
+};
+
+const scrollTo = (id: string) => {
+  const element = document.querySelector(id)
+
+  element?.scrollIntoView({
+    behavior: "smooth",
+    block: "start"
+  })
+}
+
 export const lib = {
   showError,
   getCurrentDate,
@@ -110,5 +174,9 @@ export const lib = {
   getIsValidImgUrl,
   getIsNotRemovedDescription,
   getIsNotHTML,
+  checkSubscribe,
+  removeWhiteSpace,
+  validateAge,
+  scrollTo
 };
 export * from "./hooks";

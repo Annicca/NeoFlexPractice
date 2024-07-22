@@ -1,0 +1,19 @@
+.step {
+    @include flex-container-column;
+    gap: 20px;
+
+    &__number {
+        padding: 9 18px;
+        margin-right: 36px;
+        border-radius: 50%;
+        background-color: var(--grayD9);
+        @include font-styles-ubuntu(
+            $font-size: var(--font-20),
+            $line-height: var(--line-height-29),
+        );
+    }
+
+    &__name {
+        line-height: var(--line-height-24);
+    }
+}

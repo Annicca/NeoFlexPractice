@@ -1,9 +1,9 @@
 import { FC } from "react";
 import { Outlet } from "react-router";
 import { Header, Footer } from "../../widgets";
+import classNames from "classnames";
 
 import "./index.scss";
-import classNames from "classnames";
 
 export const Layout: FC = () => {
   return (

@@ -1,0 +1,40 @@
+.amount-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1px 1fr;
+    grid-template-rows: auto;
+    gap: 3%;
+
+    @include media-tablet {
+        grid-template-columns: 1fr; 
+        gap: 10px;
+    }
+
+    &__inner {
+        @include flex-container-column;
+        gap: 32px;
+    }
+
+    &__chosen {
+        @include flex-container-column;
+        gap: 16px;
+    }
+
+    &__subtitle {
+        @include font-styles-ubuntu(
+            $font-size: var(--font-20),
+            $line-height: var(--line-height-20)
+        );
+    }
+
+    &__value {
+        width: 100%;
+        max-width: 220px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid var(--gray8033);
+        @include font-styles-ubuntu(
+            $font-weight: var(--medium),
+            $line-height: var(--line-height-16)
+        );
+    }
+}

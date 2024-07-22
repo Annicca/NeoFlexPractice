@@ -1,2 +1,3 @@
 export { Layout } from "./layout";
-export { HomePage } from "./home";
+export { LazyHome as HomePage } from "./home";
+export {LazyLoan as LoanPage } from "./loan";
