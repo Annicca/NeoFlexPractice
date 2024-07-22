@@ -2,6 +2,7 @@ import { AppRouters, RoutersPath } from "shared/const";
 import type { RouteObject } from "react-router";
 import { createBrowserRouter } from "react-router-dom";
 import { HomePage, LoanPage, Layout } from "pages";
+import { LazyNotFound } from "pages/404";
 
 const childrenRoutes: Record<AppRouters, RouteObject> = {
   [AppRouters.HOME]: {
@@ -32,6 +33,7 @@ const routesConfig: RouteObject[] = [
     path: "/",
     element: <Layout />,
     children: Object.values(childrenRoutes),
+    errorElement: <LazyNotFound />
   },
 ];
 
