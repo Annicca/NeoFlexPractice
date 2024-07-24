@@ -1,4 +1,5 @@
 import { ReactElement, ReactNode } from "react";
+import { EStatusApplication } from "shared/const";
 
 export type TLink = {
   label: string;
@@ -72,4 +73,72 @@ export type TPrescoring = {
 export type TOption = {
   label: string;
   value: string | number;
+}
+
+export type TOffer = {
+  applicationId: number,
+  requestedAmount: number,
+  totalAmount: number,
+  term: number,
+  monthlyPayment: number,
+  rate: number,
+  isInsuranceEnabled: boolean,
+  isSalaryClient: boolean
+}
+
+export type TApplication = {
+  id: number,
+  client: {
+    firstName: string,
+    lastName: string,
+    middleName: string | null,
+    email: string,
+    gender: "MALE" | "FEMALE",
+    birthdate: string,
+    passportSeries: string,
+    passportNumber: string,
+    passportIssueDate: string | null,
+    passportIssueBranch: string | null,
+    maritalStatus: string | null,
+    dependentAmount: number | null,
+    employment: null | {
+      employmentStatus: string,
+      employerINN: string,
+      salary: number,
+      position: string,
+      workExperienceTotal: number,
+      workExperienceCurrent: number
+    },
+    account: string | null
+  },
+  credit: null | {
+    amount: number,
+    term: number,
+    monthlyPayment: number,
+    rate: number,
+    psk: number,
+    isInsuranceEnabled: boolean,
+    isSalaryClient: boolean,
+    paymentSchedule: [
+      {
+        number: number,
+        date: string,
+        totalPayment: number,
+        interestPayment: number,
+        debtPayment: number,
+        remainingDebt: number
+      }
+    ]
+  },
+  status: EStatusApplication,
+  creationDate: string,
+  signDate: string | null,
+  sesCode: string,
+  statusHistory: [
+    {
+      status: EStatusApplication,
+      time: string,
+      changeType: string
+    }
+  ]
 }

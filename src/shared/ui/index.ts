@@ -27,3 +27,4 @@ export {Select} from "./select";
 export {Option} from "./option";
 export {SelectAmount} from "./selectAmount";
 export {LinkButton} from "./linkButton";
+export {Offer} from "./offer";

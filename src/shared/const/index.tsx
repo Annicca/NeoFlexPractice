@@ -17,6 +17,18 @@ export const RoutersPath: Record<AppRouters, string> = {
   [AppRouters.RESOURCES]: "resources",
 };
 
+export enum EStatusApplication {
+  PREAPPROVAL = "PREAPPROVAL",
+  REQUEST_DENIED = "REQUEST_DENIED",
+  APPROVED = "APPROVED"
+}
+
+export const STATUS_APPLICATION = {
+  [EStatusApplication.PREAPPROVAL]: "Choose an offer",
+  [EStatusApplication.APPROVED]: "Continue registration",
+  [EStatusApplication.REQUEST_DENIED]: ""
+}
+
 export const LINK_NEOFLEX = "https://www.neoflex.ru/";
 
 export const HEADER_LINKS: TLink[] = [

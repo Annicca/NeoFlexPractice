@@ -1,6 +1,6 @@
 import axios, { AxiosError } from "axios";
 import { lib } from "shared/lib";
-import { TPrescoring } from "shared/types";
+import { TApplication, TOffer, TPrescoring } from "shared/types";
 
 const BASE_URL = "http://localhost:8080"
 
@@ -32,16 +32,56 @@ const emailSubscribe = async (email: string) => {
  * отправка формы prescoring
  * @param data - данные формы
  */
-const apllicatioPrescoring = async (data: TPrescoring) => {
+const apllicatioPrescoring = async (data: TPrescoring): Promise<TOffer[] | null> => {
     try {
         const response = await instance.post("/application", data)
         if(response.status === 200) {
-            console.log(response.data);
+            return response.data
         }
+        return null;
     } catch (error) {
         lib.showError(error as AxiosError)
         throw error;
     }
 }
 
-export const api = {emailSubscribe, apllicatioPrescoring}
+/**
+ * получение заявки по id
+ * @param id - id заявки
+ * @returns список офферов
+ */
+
+const getApplication = async (id: number): Promise<TApplication | null> => {
+    try {
+        const response = await instance.get(`/admin/application/${id}`)
+        if(response.status === 200) {
+            return response.data as TApplication;
+        }
+        return null;
+    } catch (error) {
+        lib.showError(error as AxiosError)
+        throw error;
+    }
+}
+
+/**
+ * выбрать оффер
+ * @param offer - предложение
+ * @returns
+ */
+
+const chooseOffer = async (offer: TOffer) => {
+    try {
+        await instance.post(`/application/apply`, offer)
+    } catch (error) {
+        lib.showError(error as AxiosError)
+        throw error;
+    }
+}
+
+export const api = {
+    emailSubscribe, 
+    apllicatioPrescoring, 
+    getApplication, 
+    chooseOffer
+}

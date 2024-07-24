@@ -2,14 +2,19 @@ import { useState } from "react";
 import { Button, Input, Loader, Select } from "shared/ui";
 import { useForm } from "react-hook-form";
 import { PrescoringAmount } from "features";
-import { TPrescoring } from "shared/types";
+import { TOffer, TPrescoring } from "shared/types";
 import { MIN_AMOUNT, TERMS } from "shared/const";
 import { lib } from "shared/lib";
 import { api } from "shared/api/api";
+import { useApplicationStore } from "app/store";
 
 import "./StepFirstPrescoring.scss";
 
+
 export const StepFirstPrescoring = () => {
+    const setOffers = useApplicationStore((state) => state.setOffers);
+    const setApplicationId = useApplicationStore((state) => state.setApplicationId);
+    const fetchApplication = useApplicationStore((state) => state.fetchApplication);
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState<string | null>(null);
 
@@ -22,7 +27,14 @@ export const StepFirstPrescoring = () => {
         setLoading(true);
         setError(null);
         try {
-            await api.apllicatioPrescoring(data);
+            const offers: TOffer[] | null = await api.apllicatioPrescoring(data);
+            setOffers(offers);
+            console.log(offers)
+            if (!offers) return;
+            setApplicationId(offers[0].applicationId);
+            fetchApplication(offers[0].applicationId)
+
+
         } catch {
             setError("Простите, нам не удалось отправить вашу заявку");
         } finally {

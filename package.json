@@ -62,6 +62,7 @@
     "react-hook-form": "^7.52.1",
     "react-router": "^6.23.1",
     "react-router-dom": "^6.23.1",
-    "webpack-append": "^0.1.2"
+    "webpack-append": "^0.1.2",
+    "zustand": "^4.5.4"
   }
 }

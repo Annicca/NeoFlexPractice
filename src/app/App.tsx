@@ -1,10 +1,10 @@
 import { Suspense } from "react";
 import { RouterProvider } from "react-router";
 import { router } from "./routers";
+import { Loading } from "pages";
 
 const App = () => (
-  // можно добавить компонент загрузки вместо текста Loading
-  <Suspense fallback="Loading ...">
+  <Suspense fallback={<Loading />}>
     <RouterProvider router={router} />
   </Suspense>
 );

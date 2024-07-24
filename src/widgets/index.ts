@@ -15,3 +15,4 @@ export {Faq} from "./faq";
 export {Steps} from "./steps";
 export {FormPrescoring} from "./formPrescoring";
 export {NotFound} from "./notfound";
+export {ContinueRegistration} from "./continueRegistration";

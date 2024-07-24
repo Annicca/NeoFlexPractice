@@ -14,3 +14,4 @@ export {ArrowIcon} from "./arrowIcon";
 export {SuccessIcon} from "./successIcon";
 export {ErrorIcon} from "./errorIcon";
 export {NotFoundIcon} from "./notFoundIcon";
+export {OfferIcon} from "./offerIcon";
