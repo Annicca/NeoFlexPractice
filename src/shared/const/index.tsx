@@ -7,6 +7,7 @@ export enum AppRouters {
   PRODUCT = "product",
   ACCOUNT = "account",
   RESOURCES = "resources",
+  APPLICATION = "application"
 }
 
 export const RoutersPath: Record<AppRouters, string> = {
@@ -15,6 +16,7 @@ export const RoutersPath: Record<AppRouters, string> = {
   [AppRouters.PRODUCT]: "product",
   [AppRouters.ACCOUNT]: "account",
   [AppRouters.RESOURCES]: "resources",
+  [AppRouters.APPLICATION]: "loan/:id"
 };
 
 export enum EStatusApplication {
