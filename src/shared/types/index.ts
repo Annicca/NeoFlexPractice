@@ -1,4 +1,4 @@
-import { ReactElement, ReactNode } from "react";
+import { ReactNode } from "react";
 import { EStatusApplication } from "shared/const";
 
 export type TLink = {
@@ -70,9 +70,9 @@ export type TPrescoring = {
   passportNumber: string
 }
 
-export type TOption = {
+export type TOption<T> = {
   label: string;
-  value: string | number;
+  value: T;
 }
 
 export type TOffer = {
@@ -86,6 +86,11 @@ export type TOffer = {
   isSalaryClient: boolean
 }
 
+export type TGender = "MALE" | "FEMALE";
+export type TMaritalStatus = "MARRIED" | "DIVORCED" | "SINGLE" | "WIDOW_WIDOWER";
+export type TEmploymentStatus = "UNEMPLOYED" | "SELF_EMPLOYED" | "EMPLOYED" | "BUSINESS_OWNER";
+export type TPosition = "WORKER" | "MID_MANAGER" | "TOP_MANAGER" | "OWNER";
+
 export type TApplication = {
   id: number,
   client: {
@@ -93,19 +98,19 @@ export type TApplication = {
     lastName: string,
     middleName: string | null,
     email: string,
-    gender: "MALE" | "FEMALE",
+    gender: TGender,
     birthdate: string,
     passportSeries: string,
     passportNumber: string,
     passportIssueDate: string | null,
     passportIssueBranch: string | null,
-    maritalStatus: string | null,
+    maritalStatus: TMaritalStatus | null,
     dependentAmount: number | null,
     employment: null | {
-      employmentStatus: string,
+      employmentStatus: TEmploymentStatus,
       employerINN: string,
       salary: number,
-      position: string,
+      position: TPosition,
       workExperienceTotal: number,
       workExperienceCurrent: number
     },
@@ -141,4 +146,47 @@ export type TApplication = {
       changeType: string
     }
   ]
+}
+
+export type TScoring  = {
+  gender: TGender,
+  maritalStatus: TMaritalStatus,
+  dependentAmount: number,
+  passportIssueDate: string,
+  passportIssueBranch: string,
+  employment: {
+    employmentStatus: TEmploymentStatus,
+    employerINN: number,
+    salary: number,
+    position: TPosition,
+    workExperienceTotal: number,
+    workExperienceCurrent: number,
+  },
+  account: string,
+}
+
+export type TDocument = {
+  number: number,
+  date: string | Date,
+  totalPayment: number,
+  interestPayment: number,
+  debtPayment: number,
+  remainingDebt: number,
+}
+
+export type TDirectionSort = 'asc' | 'desc'
+
+export type TSortConfig<T extends object> = {
+    key: keyof T;
+    direction: TDirectionSort;
+}
+
+export type TKeyLAbel<T> = {
+  value: keyof T,
+  label: string,
+}
+
+export type TModalProps = {
+  isOpen: boolean;
+  onClose: () => void;
 }

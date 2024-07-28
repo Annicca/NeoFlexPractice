@@ -1,0 +1,1 @@
+export {ModalElement as Modal} from "./Modal"; 

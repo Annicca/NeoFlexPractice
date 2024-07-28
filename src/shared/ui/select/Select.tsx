@@ -1,19 +1,22 @@
-import { FC, forwardRef, SelectHTMLAttributes } from "react";
+import {ForwardedRef, forwardRef, SelectHTMLAttributes } from "react";
 import { FieldError } from "react-hook-form";
 import { Label } from "../label"
 import { Option } from "../option";
 import { TOption } from "shared/types";
 import classNames from "classnames";
 
-type TSelectProps = SelectHTMLAttributes<HTMLSelectElement> & {
+type TSelectProps<T extends string | number | readonly string[] | undefined> = SelectHTMLAttributes<HTMLSelectElement> & {
     label?: string,
     error?: FieldError | undefined,
     classNameContainer?: string;
-    options: TOption[],
+    options: TOption<T>[],
     isRequired?: boolean,
 }
 
-export const Select:FC<TSelectProps> = forwardRef<HTMLSelectElement, TSelectProps>((props, ref) => {
+const SelectInner = <T extends string | number | readonly string[] | undefined,>(
+    props: TSelectProps<T>,
+    ref: ForwardedRef<HTMLSelectElement>
+) => {
     const {label, error, isRequired, classNameContainer, ...selectProps} = props;
     return(
         <div className={classNames("input-container", classNameContainer)}>
@@ -22,14 +25,21 @@ export const Select:FC<TSelectProps> = forwardRef<HTMLSelectElement, TSelectProp
                     "error": error,
                 })} 
                 ref={ref}
+                defaultValue={props.defaultValue || ""}
                 {...selectProps}
             >
+                <Option key = "default" value="" hidden disabled></Option>
                 {props.options.map((option) => (
-                    <Option key={option.value} value={option.value}>{option.label}</Option>
+                    <Option key={String(option.value)} value={option.value}>{option.label}</Option>
                 ))}
-      
-      </select>
+
+            </select>
+            {error && <div className='error-text'>{error?.message}</div>}
         </div>
         
     )
-})
+}
+
+export const Select = forwardRef(SelectInner) as <T extends string | number | readonly string[] | undefined>(
+    props: TSelectProps<T> & { ref?: ForwardedRef<HTMLSelectElement> }
+) => ReturnType<typeof SelectInner>;

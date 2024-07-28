@@ -1,0 +1,46 @@
+.scoring {
+    margin-top: 24px;
+    padding: 32px;
+    @include flex-container-column;
+    background-color: var(--white);
+    box-shadow: 0px 2px 4px 0px var(--shadow33), 0px 0px 8px 0px var(--shadow14);
+    border-radius: 28px;
+
+    &__title {
+        max-width: 50%;
+        margin-bottom: 41px;
+
+        @include media-tablet {
+            width: 100%;
+            max-width: 100%;
+            justify-content: space-between;
+        }
+    }
+
+    &__subtitle {
+        margin: 32px 0;
+        @include font-styles-ubuntu(
+            $font-size: var(--font-20),
+            $line-height: var(--line-height-20),
+        );
+    }
+
+    &__inputs {
+        @include flex-container;
+        flex-wrap: wrap;
+        gap: 16px;
+
+        &:last-of-type{
+            margin-bottom: 20px;
+        }
+    }
+
+    &__input {
+        flex: 1 0 401px;
+        align-self: stretch;
+    }
+
+    .continue, .loader {
+        align-self: flex-end;
+    }
+}

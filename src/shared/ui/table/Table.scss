@@ -1,0 +1,13 @@
+.table-row {
+    @include flex-container;
+}
+
+.table-btn {
+    background-color: inherit;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    text-transform: inherit;
+}

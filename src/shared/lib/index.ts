@@ -1,5 +1,6 @@
 import { AxiosError } from "axios";
 import { REMOVED_DESCRIPTION } from "shared/const";
+import { TKeyLAbel } from "shared/types";
 
 const getStep = (slider: HTMLElement | null, lengthItems: number) => {
   if (!slider) return;
@@ -124,36 +125,98 @@ const removeWhiteSpace = (text: string) => {
 }
 
 /**
+ * проверка даты на корректность
+ * @param dateString - строка даты
+ * @returns boolean
+ */
+const checkCorrectDate = (dateString: string): boolean => {
+  const valueWithoutDash = dateString.replace(/[^\d]/g, '');
+
+  if (valueWithoutDash.length === 8) {
+    const arrDate = dateString.split("-");
+    const newDate = new Date(Number(arrDate[0]), Number(arrDate[1]) - 1, Number(arrDate[2]));
+
+    if ((newDate.getFullYear() != Number(arrDate[0])) || (newDate.getMonth() + 1 != Number(arrDate[1])) || (newDate.getDate() != Number(arrDate[2]))) {
+      return false;
+    }
+
+    return true;
+  }
+  return false;
+}
+
+/**
  * проверка на 18 летний возраст
  * @param value строка даты
  * @returns boolean или срока ошибки
  */
 const validateAge = (value: string): string | boolean  => {
-  const valueWithoutDash = value.replace(/[^\d]/g, '');
+  // const valueWithoutDash = value.replace(/[^\d]/g, '');
 
-  if (valueWithoutDash.length === 8) {
-    const arrBirth = value.split("-");
-    const birth = new Date(Number(arrBirth[0]), Number(arrBirth[1]) - 1, Number(arrBirth[2]));
-    let today = new Date();
+  // if (valueWithoutDash.length === 8) {
+  //   const arrBirth = value.split("-");
+  //   const birth = new Date(Number(arrBirth[0]), Number(arrBirth[1]) - 1, Number(arrBirth[2]));
+  //   let today = new Date();
 
-    if ((birth.getFullYear() != Number(arrBirth[0])) || (birth.getMonth() + 1 != Number(arrBirth[1])) || (birth.getDate() != Number(arrBirth[2]))) {
-      return "Incorrect date of birth";
-    }
-
-
-    const yearsOld18 = new Date();
-    yearsOld18.setFullYear(today.getFullYear() - 18)
+  //   if ((birth.getFullYear() != Number(arrBirth[0])) || (birth.getMonth() + 1 != Number(arrBirth[1])) || (birth.getDate() != Number(arrBirth[2]))) {
+  //     return "Incorrect date of birth";
+  //   }
 
 
-    if (birth > yearsOld18) {
-      return "You must be at least 18 years old"
-    }
+    
 
-    return true;
+  //   return true;
+  // }
+
+  // return false;
+
+  const isCorrectDate = checkCorrectDate(value);
+  if (!isCorrectDate) {
+    return "Incorrect date of birth";
   }
 
-  return false;
+  const arrBirth = value.split("-");
+  const birth = new Date(Number(arrBirth[0]), Number(arrBirth[1]) - 1, Number(arrBirth[2]));
+  let today = new Date();
+  const yearsOld18 = new Date();
+  yearsOld18.setFullYear(today.getFullYear() - 18)
+
+
+  if (birth > yearsOld18) {
+    return "You must be at least 18 years old"
+  }
+
+  return true;
 };
+
+/**
+ * проверка на то что дата раньше текущей
+ * @param dateString - строка даты
+ * @param message - сообщение об ошибке
+ * @returns boolean или сообщение об ошибке
+ */
+const isDateEarlier = (dateString: string): boolean => {
+  const givenDate = new Date(dateString);
+  const currentDate = new Date();
+
+  return givenDate < currentDate;
+};
+
+/**
+ * вывод сообщения об ошибке если дата больше текущей
+ * @param value - строка даты
+ * @param message - сообщение об ошибке
+ * @returns boolean или сообщение об ошибке
+ */
+const checkDateMax = (value: string, message: string): boolean | string => {
+
+  const isCorrectDate = checkCorrectDate(value);
+  const isEarlier = isDateEarlier(value)
+  if (!isCorrectDate || !isEarlier) {
+    return message;
+  }
+  return true;
+}
 
 const scrollTo = (id: string) => {
   const element = document.querySelector(id)
@@ -162,6 +225,16 @@ const scrollTo = (id: string) => {
     behavior: "smooth",
     block: "start"
   })
+}
+
+const toTitleCase = (value: string) => {
+  return value
+      .replace(/(^.|[A-Z]+)([^A-Z]?)/g, (match, p1, p2) => `${p1}${p2}`.trim())
+}
+
+const keysToArrayOfObjects = <T extends object,>(obj: T): TKeyLAbel<T>[] => {
+  const keys = Object.keys(obj)
+  return keys.map(key => ({ value: key as keyof T, label: toTitleCase(key)}));
 }
 
 export const lib = {
@@ -177,6 +250,9 @@ export const lib = {
   checkSubscribe,
   removeWhiteSpace,
   validateAge,
-  scrollTo
+  checkDateMax,
+  scrollTo,
+  toTitleCase,
+  keysToArrayOfObjects
 };
 export * from "./hooks";

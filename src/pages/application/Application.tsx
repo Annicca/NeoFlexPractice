@@ -1,6 +1,10 @@
+import { RegistrationApplication } from "widgets";
+
 const Application = () => {
     return(
-        <>application</>
+        <main>
+            <RegistrationApplication />
+        </main>
     )
 }
 

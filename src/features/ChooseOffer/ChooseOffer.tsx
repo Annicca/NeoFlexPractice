@@ -1,10 +1,10 @@
+import { useState } from "react";
 import { useApplicationStore } from "app/store"
 import { List, ListItem, Offer } from "shared/ui";
 import { TOffer } from "shared/types";
 import { api } from "shared/api/api";
 
 import "./ChooseOffer.scss";
-import { useState } from "react";
 
 export const ChooseOffer = () => {
     const offers = useApplicationStore((state) => state.offers);

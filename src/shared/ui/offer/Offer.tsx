@@ -1,10 +1,9 @@
 import { FC } from "react";
 import { TOffer } from "shared/types"
 import { ErrorIcon, OfferIcon, SuccessIcon } from "../icons";
-import { Button } from "../button";
-import { Loader } from "../loader";
 
 import "./Offer.scss";
+import { ContinueButton } from "../continueButton";
 
 type TOfferProps = {
     offer: TOffer;
@@ -27,11 +26,7 @@ export const Offer:FC<TOfferProps> = ({offer, isLoading = false, onChoose}) => {
                     <div className="offer__text">Salary client {offer.isSalaryClient ? <SuccessIcon/> : <ErrorIcon />}</div>
                 </div>
             </div>
-            {isLoading ? 
-                <Loader />
-                :
-                <Button className="offer__select" onClick={() => onChoose(offer)}>Select</Button>
-            }
+            <ContinueButton loading = {isLoading} className="offer__select" onClick={() => onChoose(offer)} text="Select" />
         </div>
     )
 }

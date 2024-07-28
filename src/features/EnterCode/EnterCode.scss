@@ -1,0 +1,12 @@
+.confirm-code {
+    text-align: center;
+
+    &__title {
+        margin: 0 0 32px;
+        @include font-styles-ubuntu(
+            $font-size: var(--font-30),
+            $font-weight: var(--bold),
+            $line-height: var(--line-height-33)
+        );
+    }
+}

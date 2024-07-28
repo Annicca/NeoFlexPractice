@@ -16,3 +16,8 @@ export {Steps} from "./steps";
 export {FormPrescoring} from "./formPrescoring";
 export {NotFound} from "./notfound";
 export {ContinueRegistration} from "./continueRegistration";
+export {RegistrationApplication} from "./registrationApplication";
+export {WaitMessage} from "./waitMessage";
+export {SigningDocuments} from "./signingDocuments";
+export {Congratulations} from "./congratulations";
+export {LastStep} from "./lastStep";

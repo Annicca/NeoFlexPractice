@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Button, Input, Loader, Select } from "shared/ui";
+import { ContinueButton, Input, Select } from "shared/ui";
 import { useForm } from "react-hook-form";
 import { PrescoringAmount } from "features";
 import { TOffer, TPrescoring } from "shared/types";
@@ -29,12 +29,9 @@ export const StepFirstPrescoring = () => {
         try {
             const offers: TOffer[] | null = await api.apllicatioPrescoring(data);
             setOffers(offers);
-            console.log(offers)
             if (!offers) return;
             setApplicationId(offers[0].applicationId);
             fetchApplication(offers[0].applicationId)
-
-
         } catch {
             setError("Простите, нам не удалось отправить вашу заявку");
         } finally {
@@ -170,12 +167,8 @@ export const StepFirstPrescoring = () => {
                     />
                 </div>
             </div>
-            {error && <div className="error-text">{error}</div>}
-            {loading ? 
-                <Loader />
-                :
-                <Button type="submit" className="prescoring__continue">Continue</Button>
-            }
+            {error && <div className="error-text error-form">{error}</div>}
+            <ContinueButton loading = {loading} type="submit"/>
         </form>
     )
 }

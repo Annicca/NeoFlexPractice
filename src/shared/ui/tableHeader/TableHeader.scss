@@ -1,0 +1,8 @@
+.arrow {
+    
+    transform: rotate(0);
+    &_asc {
+        
+        transform: rotate(180deg);
+    }
+}

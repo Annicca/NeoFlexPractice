@@ -7,7 +7,7 @@ import { ErrorIcon, SuccessIcon } from "../icons";
 
 import "./Input.scss";
 
-type InputProps = InputHTMLAttributes<HTMLInputElement> & {
+type TInputProps = InputHTMLAttributes<HTMLInputElement> & {
     label?: string,
     error?: FieldError | undefined,
     classNameContainer?: string;
@@ -15,7 +15,7 @@ type InputProps = InputHTMLAttributes<HTMLInputElement> & {
     isDirty?: boolean;
 }
 
-export const Input:FC<InputProps> = forwardRef<HTMLInputElement, InputProps>((props, ref)  => {
+export const Input:FC<TInputProps> = forwardRef<HTMLInputElement, TInputProps>((props, ref)  => {
     const {label, error, isRequired, isDirty, classNameContainer, ...inputProps} = props;
     return(
         <div className={classNames("input-container", classNameContainer)}>

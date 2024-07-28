@@ -1,0 +1,10 @@
+.modal-container {
+    &__title-container {
+        @include flex-container;
+    }
+    &__title {
+        @include font-styles-ubuntu(
+            $line-height: var(--line-height-24)
+        );
+    }
+}

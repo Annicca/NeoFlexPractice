@@ -1,0 +1,9 @@
+.agreement {
+    @include flex-container-start;
+    column-gap: 40px;
+
+    &__send {
+        padding: 11px 28px;
+        border-radius: 8px;
+    }
+}

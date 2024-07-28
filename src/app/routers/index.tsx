@@ -1,7 +1,7 @@
 import { AppRouters, RoutersPath } from "shared/const";
 import type { RouteObject } from "react-router";
 import { createBrowserRouter } from "react-router-dom";
-import { HomePage, LoanPage, Layout, NotFoundPage, AplicationPage } from "pages";
+import { HomePage, LoanPage, Layout, NotFoundPage, AplicationPage, DocumentPage, DocumentSign, ConfirmCodePage } from "pages";
 
 const childrenRoutes: Record<AppRouters, RouteObject> = {
   [AppRouters.HOME]: {
@@ -28,6 +28,18 @@ const childrenRoutes: Record<AppRouters, RouteObject> = {
   [AppRouters.APPLICATION]: {
     path: RoutersPath.application,
     element: <AplicationPage />,
+  },
+  [AppRouters.DOCUMENT]: {
+    path: RoutersPath.document,
+    element: <DocumentPage />,
+  },
+  [AppRouters.DOCUMENT_SIGN]: {
+    path: RoutersPath.documentSign,
+    element: <DocumentSign />,
+  },
+  [AppRouters.CONFIRM_CODE]: {
+    path: RoutersPath.confirmCode,
+    element: <ConfirmCodePage />,
   }
 };
 

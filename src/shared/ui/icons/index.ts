@@ -15,3 +15,6 @@ export {SuccessIcon} from "./successIcon";
 export {ErrorIcon} from "./errorIcon";
 export {NotFoundIcon} from "./notFoundIcon";
 export {OfferIcon} from "./offerIcon";
+export {ArrowDropIcon} from "./arrowDropIcon";
+export {CloseIcon} from "./closeIcon";
+export {FileIcon} from "./fileIcon";

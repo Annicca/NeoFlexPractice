@@ -17,4 +17,10 @@
       background-color: initial;
     }
   }
+
+  &_error {
+    padding: 11px 27px;
+    border-radius: 8px;
+    background-color: var(--red-opacity);
+  }
 }

@@ -7,7 +7,8 @@ export const ArrowIcon: FC<TIcon> = ({
     className,
   }) => {
     return(
-        <svg  width={width}
+        <svg  
+        width={width}
         height={height}
         viewBox={`0 0 ${width} ${height}`}
         className={className} 

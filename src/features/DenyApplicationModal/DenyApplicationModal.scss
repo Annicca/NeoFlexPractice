@@ -1,0 +1,26 @@
+.deny-application {
+    @include flex-container-column;
+    row-gap: 35px;;
+    &__message {
+        margin-top: 16px;
+        @include font-styles-ubuntu(
+            $font-weight: var(--medium),
+            $line-height: var(--line-height-23),
+        );
+    }
+
+    &__buttons {
+        @include flex-container;
+        justify-content: flex-end;
+        gap: 40px;
+    }
+
+    &__cancel {
+        padding: 11px 21px;
+        border-radius: 8px;
+    }
+
+    &__deny {
+        padding: 11px 28px;
+    }
+}

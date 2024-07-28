@@ -1,4 +1,4 @@
-import { TAboutCardItem, TCashback, TCondition, TFaq, TLink, TOption, TRates } from "shared/types";
+import { TAboutCardItem, TCashback, TCondition, TDocument, TEmploymentStatus, TFaq, TGender, TLink, TMaritalStatus, TOption, TPosition, TRates } from "shared/types";
 import { BagIcon, CalendarIcon, ClockIcon, CreditCardIcon, MoneyIcon } from "shared/ui/icons";
 
 export enum AppRouters {
@@ -7,7 +7,10 @@ export enum AppRouters {
   PRODUCT = "product",
   ACCOUNT = "account",
   RESOURCES = "resources",
-  APPLICATION = "application"
+  APPLICATION = "application",
+  DOCUMENT = "document",
+  DOCUMENT_SIGN = "documentSign",
+  CONFIRM_CODE = "confirmCode"
 }
 
 export const RoutersPath: Record<AppRouters, string> = {
@@ -16,19 +19,34 @@ export const RoutersPath: Record<AppRouters, string> = {
   [AppRouters.PRODUCT]: "product",
   [AppRouters.ACCOUNT]: "account",
   [AppRouters.RESOURCES]: "resources",
-  [AppRouters.APPLICATION]: "loan/:id"
+  [AppRouters.APPLICATION]: "loan/:id",
+  [AppRouters.DOCUMENT]: "loan/:id/document",
+  [AppRouters.DOCUMENT_SIGN]: "loan/:id/document/sign",
+  [AppRouters.CONFIRM_CODE]: "loan/:id/code"
 };
 
 export enum EStatusApplication {
   PREAPPROVAL = "PREAPPROVAL",
   REQUEST_DENIED = "REQUEST_DENIED",
-  APPROVED = "APPROVED"
+  APPROVED = "APPROVED",
+  CC_DENIED = "CC_DENIED",
+  CC_APPROVED = "CC_APPROVED",
+  CLIENT_DENIED = "CLIENT_DENIED",
+  PREPARE_DOCUMENTS = "PREPARE_DOCUMENTS",
+  DOCUMENT_CREATED = "DOCUMENT_CREATED",
+  CREDIT_ISSUED = "CREDIT_ISSUED",
 }
 
 export const STATUS_APPLICATION = {
   [EStatusApplication.PREAPPROVAL]: "Choose an offer",
   [EStatusApplication.APPROVED]: "Continue registration",
-  [EStatusApplication.REQUEST_DENIED]: ""
+  [EStatusApplication.CC_APPROVED]: "Your application approve",
+  [EStatusApplication.REQUEST_DENIED]: "Your application Denied",
+  [EStatusApplication.CC_DENIED]: "Your application Denied",
+  [EStatusApplication.CLIENT_DENIED]: "Your application Denied",
+  [EStatusApplication.PREPARE_DOCUMENTS]: "Prepare documents",
+  [EStatusApplication.DOCUMENT_CREATED]: "Documents prepared",
+  [EStatusApplication.CREDIT_ISSUED]: "Credit issued",
 }
 
 export const LINK_NEOFLEX = "https://www.neoflex.ru/";
@@ -281,7 +299,7 @@ export const STEPS = [
   "The bank will deliver the card free of charge, wherever convenient, to your city"
 ]
 
-export const TERMS: TOption[] = [
+export const TERMS: TOption<string | number>[] = [
   {
     label: "6 month",
     value: 6,
@@ -300,5 +318,159 @@ export const TERMS: TOption[] = [
   },
 ]
 
-export const MIN_AMOUNT = 15000
-export const MAX_AMOUNT = 600000
+export const MIN_AMOUNT = 15000;
+export const MAX_AMOUNT = 600000;
+
+export const GENDERS: TOption<TGender>[] = [ 
+  {
+    label: "male",
+    value: "MALE",
+  },
+  {
+    label: "female",
+    value: "FEMALE",
+  },
+]
+
+export const MARTIAL_STATUSES: TOption<TMaritalStatus>[] = [
+  {
+    label: "married",
+    value: "MARRIED",
+  },
+  {
+    label: "divorced",
+    value: "DIVORCED",
+  },
+  {
+    label: "single",
+    value: "SINGLE",
+  },
+  {
+    label: "widow windower",
+    value: "WIDOW_WIDOWER",
+  },
+];
+
+export const EMPLOYMENT_STATUSES: TOption<TEmploymentStatus>[] = [
+  {
+    label: "unemployed",
+    value: "UNEMPLOYED",
+  },
+  {
+    label: "self employed",
+    value: "SELF_EMPLOYED",
+  },
+  {
+    label: "employed",
+    value: "EMPLOYED",
+  },
+  {
+    label: "business owner",
+    value: "BUSINESS_OWNER",
+  },
+];
+
+export const POSITIONS: TOption<TPosition>[] = [
+  {
+    label: "worker",
+    value: "WORKER",
+  },
+  {
+    label: "mid manager",
+    value: "MID_MANAGER",
+  },
+  {
+    label: "top manager",
+    value: "TOP_MANAGER",
+  }, 
+  {
+    label: "owner",
+    value: "OWNER",
+  },
+]
+
+export const DEPENDENTS: TOption<number>[] = [
+  {
+    label: "0",
+    value: 0,
+  },
+  {
+    label: "1",
+    value: 1,
+  },
+  {
+    label: "2",
+    value: 2,
+  },
+  {
+    label: "3",
+    value: 3,
+  },
+  {
+    label: "4",
+    value: 4,
+  },
+  {
+    label: "5 or more",
+    value: 5,
+  },
+]
+
+export const DOCUMENTS: TDocument[] = [
+  {
+    number: 0,
+    date: "19-08-2022",
+    totalPayment: 0,
+    interestPayment: 0,
+    debtPayment: 0,
+    remainingDebt: 230500,
+  },
+  {
+    number: 1,
+    date: "19-09-2022",
+    totalPayment: 10215.89,
+    interestPayment: 1152.5,
+    debtPayment: 9063.39,
+    remainingDebt: 221436.61,
+  },
+  {
+    number: 2,
+    date: "19-10-2022",
+    totalPayment: 10215.89,
+    interestPayment: 1107.19,
+    debtPayment: 9108.7,
+    remainingDebt: 212327.91,
+  },
+  {
+    number: 3,
+    date: "19-11-2022",
+    totalPayment: 10215.89,
+    interestPayment: 1061.64,
+    debtPayment: 9154.25,
+    remainingDebt: 203173.66,
+  },
+  {
+    number: 4,
+    date: "19-12-2022",
+    totalPayment: 10215.89,
+    interestPayment: 1015.87,
+    debtPayment: 9200.02,
+    remainingDebt: 193973.64,
+  },
+  {
+    number: 5,
+    date: "19-01-2023",
+    totalPayment: 10215.89,
+    interestPayment: 969.87,
+    debtPayment: 9246.02,
+    remainingDebt: 184727.62,
+  },
+  {
+    number: 6,
+    date: "19-02-2023",
+    totalPayment: 10215.89,
+    interestPayment: 923.64,
+    debtPayment: 9292.25,
+    remainingDebt: 175435.37,
+  },
+]

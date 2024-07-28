@@ -1,6 +1,6 @@
 import axios, { AxiosError } from "axios";
 import { lib } from "shared/lib";
-import { TApplication, TOffer, TPrescoring } from "shared/types";
+import { TApplication, TOffer, TPrescoring, TScoring } from "shared/types";
 
 const BASE_URL = "http://localhost:8080"
 
@@ -79,9 +79,76 @@ const chooseOffer = async (offer: TOffer) => {
     }
 }
 
+/**
+ * закончить регистрацию заявки
+ * @param applicationId - номер заявки
+ */
+const finishRegistration = async (applicationId: number, scoringData: TScoring) => {
+    try {
+        await instance.put(`/application/registration/${applicationId}`, scoringData)
+    } catch (error) {
+        lib.showError(error as AxiosError)
+        throw error;
+    }
+}
+
+/**
+ * подтвердить согласие
+ * @param applicationId - номер заявки
+ */
+const documentAgree = async (applicationId: number) => {
+    try {
+        await instance.post(`/document/${applicationId}`)
+    } catch (error) {
+        lib.showError(error as AxiosError)
+    }
+}
+
+/**
+ * отказаться от заявки
+ * @param applicationId - номер заявки
+ */
+const denyApplication = async (applicationId: number) => {
+    try {
+        await instance.post(`/application/${applicationId}/deny`)
+    } catch (error) {
+        lib.showError(error as AxiosError)
+    }
+}
+
+/**
+ * подтвердить документы
+ * @param applicationId - номер заявки
+ */
+const signDocument = async (applicationId: number) => {
+    try {
+        await instance.post(`/document/${applicationId}/sign`)
+    } catch (error) {
+        lib.showError(error as AxiosError)
+    }
+}
+
+/**
+ * отправка кода подтверждения
+ * @param applicationId - номер заявки
+ */
+const confirmCode = async(applicationId: number, code: string) => {
+    try {
+        await instance.post(`/document/${applicationId}/sign/code`, code)
+    } catch (error) {
+        lib.showError(error as AxiosError);
+        throw new Error("Invalid confirmation code");
+    }
+}
+
 export const api = {
     emailSubscribe, 
     apllicatioPrescoring, 
     getApplication, 
-    chooseOffer
+    chooseOffer,
+    finishRegistration,
+    documentAgree,
+    denyApplication,
+    signDocument,
+    confirmCode
 }

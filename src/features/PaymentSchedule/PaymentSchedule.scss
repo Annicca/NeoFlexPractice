@@ -1,0 +1,35 @@
+.payment {
+    margin-top: 24px;
+    padding: 32px;
+    background-color: var(--white);
+    box-shadow: 0px 2px 4px 0px var(--shade33), 0px 0px 8px 0px var(--shade14);
+    border-radius: 28px;
+
+    &__title {
+        max-width: 475px;
+    }
+
+    &__bottom {
+        @include flex-container;
+    }
+}
+
+.payment-table {
+    margin: 76px 0 43px;
+    &__header, &__cell {
+        width: 100%;
+        max-width: 270px;
+        border-bottom: 1px solid var(--blueF0);
+
+        @include font-styles-ubuntu(
+            $font-size: var(--font-12),
+            $font-weight: var(--medium),
+            $line-height: var(--line-height-40)
+        );
+    }
+
+    &__header {
+        text-transform: uppercase;
+        color: var(--blue-gray68)
+    }
+}

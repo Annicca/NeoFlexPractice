@@ -1,0 +1,28 @@
+.signing-documents {
+    @include flex-container-column;
+    margin-top: 104px;
+    &__title {
+        width: 100%;
+        max-width: 509px;
+    }
+
+    &__text {
+        margin: 32px 0;
+        text-align: left;
+        @include font-styles-ubuntu(
+            $font-size: var(--font-20),
+            $font-weight: var(--medium),
+            $line-height: var(--line-height-23),
+        );
+    }
+
+    &__form {
+        margin-top: 16px;
+        align-self: flex-end;
+    }
+}
+
+.wait-documents {
+    max-width: 550px;
+    margin: 0 auto;
+}
