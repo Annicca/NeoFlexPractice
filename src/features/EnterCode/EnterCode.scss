@@ -1,4 +1,7 @@
 .confirm-code {
+    margin-top: 104px;
+    @include flex-container-center;
+    flex-direction: column;
     text-align: center;
 
     &__title {

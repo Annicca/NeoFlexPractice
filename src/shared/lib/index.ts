@@ -229,7 +229,8 @@ const scrollTo = (id: string) => {
 
 const toTitleCase = (value: string) => {
   return value
-      .replace(/(^.|[A-Z]+)([^A-Z]?)/g, (match, p1, p2) => `${p1}${p2}`.trim())
+    .replace(/(.)([A-Z])/g, '$1 $2')
+    .replace(/^./, str => str.toUpperCase());
 }
 
 const keysToArrayOfObjects = <T extends object,>(obj: T): TKeyLAbel<T>[] => {

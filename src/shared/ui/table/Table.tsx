@@ -39,6 +39,7 @@ export const Table = <T extends object,>(props: TTableProps<T>) => {
                 renderItem={(item: T, index) => 
                     <ListItem
                         key={Object.keys(item)[0]+index}
+                        
                     >
                         <List 
                             className={classNames("table-row", classNameRow)}

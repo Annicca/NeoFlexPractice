@@ -24,7 +24,7 @@ export const PaymentSchedule = () => {
         setIsOpenDenyModal(isOpenDenyModal => !isOpenDenyModal)
     }
 
-    if(statusApplication === EStatusApplication.DOCUMENT_CREATED) return <WaitMessage title="Documents are formed" subtitle="Documents for signing will be sent to your email" />
+    if(statusApplication === EStatusApplication.PREPARE_DOCUMENTS || statusApplication === EStatusApplication.DOCUMENT_CREATED) return <WaitMessage title="Documents are formed" subtitle="Documents for signing will be sent to your email" />
 
     return(
         <section className="payment">
@@ -38,6 +38,7 @@ export const PaymentSchedule = () => {
                 classNameTableContainer="payment-table"
                 classNameColumnHeader="payment-table__header"
                 classNameCell="payment-table__cell"
+                classNameRow="payment-table__row"
             />
             <div className="payment__bottom">
                 <Button mode="error" className="payment__deny" onClick={toggleDenyModal}>

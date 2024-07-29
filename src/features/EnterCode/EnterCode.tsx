@@ -13,6 +13,7 @@ export const EnterCode = () => {
 
   const onSubmit = async (data: string) =>{ 
     setLoading(true);
+    setError(null);
     try {
         if(applicationId) {
             await api.confirmCode(applicationId, data);
@@ -29,7 +30,7 @@ export const EnterCode = () => {
 
   return (
     <form className="confirm-code">
-        <h1>Please enter confirmation code</h1>
+        <h1 className = "confirm-code__title">Please enter confirmation code</h1>
         <InputCode 
             length={4}
             loading={loading}

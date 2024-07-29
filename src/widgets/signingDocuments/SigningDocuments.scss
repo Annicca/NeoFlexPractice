@@ -14,6 +14,14 @@
             $font-weight: var(--medium),
             $line-height: var(--line-height-23),
         );
+
+        @include media-mobile {
+            @include font-styles-ubuntu(
+                $font-size: var(--font-14),
+                $font-weight: var(--medium),
+                $line-height: var(--line-height-18),
+            );
+        }
     }
 
     &__form {
