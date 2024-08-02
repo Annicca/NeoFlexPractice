@@ -151,25 +151,6 @@ const checkCorrectDate = (dateString: string): boolean => {
  * @returns boolean или срока ошибки
  */
 const validateAge = (value: string): string | boolean  => {
-  // const valueWithoutDash = value.replace(/[^\d]/g, '');
-
-  // if (valueWithoutDash.length === 8) {
-  //   const arrBirth = value.split("-");
-  //   const birth = new Date(Number(arrBirth[0]), Number(arrBirth[1]) - 1, Number(arrBirth[2]));
-  //   let today = new Date();
-
-  //   if ((birth.getFullYear() != Number(arrBirth[0])) || (birth.getMonth() + 1 != Number(arrBirth[1])) || (birth.getDate() != Number(arrBirth[2]))) {
-  //     return "Incorrect date of birth";
-  //   }
-
-
-    
-
-  //   return true;
-  // }
-
-  // return false;
-
   const isCorrectDate = checkCorrectDate(value);
   if (!isCorrectDate) {
     return "Incorrect date of birth";
