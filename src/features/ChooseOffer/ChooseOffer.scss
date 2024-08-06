@@ -1,0 +1,10 @@
+.offers {
+    @include flex-container;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 47px;
+
+    &__item {
+        flex: 1 1 295px;
+    }
+}

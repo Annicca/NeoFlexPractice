@@ -1,0 +1,21 @@
+.congratulations {
+    margin-top: 40px;
+    @include flex-container-column;
+    align-items: center;
+    text-align: center;
+    row-gap: 32px;
+
+    &__title {
+        margin: 0;
+        @include font-styles-ubuntu(
+            $font-size: var(--font-30),
+            $font-weight: var(--bold),
+            $line-height: var(--line-height-44)
+        )
+    }
+
+    &__subtitle {
+        line-height: var(--line-height-24);
+        color: var(--gray65);
+    }
+}

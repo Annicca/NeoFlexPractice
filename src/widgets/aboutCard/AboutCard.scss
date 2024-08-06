@@ -1,0 +1,28 @@
+.about {
+    margin-top: 48px;
+    @include flex-container;
+    flex-wrap: wrap;
+    gap: 40px;
+
+    @include media-mobile {
+        margin-top: 20px;
+        gap: 20px;
+    }
+
+    &__item {
+        flex: 1 0 405px;
+        align-self: stretch;
+        background-color: var(--grayEE);
+        box-shadow: 0px 2px 4px 0px var(--shadow33), 0px 0px 8px 0px var(--shadow14);
+        border-radius: 28px;
+
+        &:nth-of-type(2n) {
+            background-color: var(--blue-grayB2);
+        }
+    
+        @include media-mobile {
+            flex: 1 0 100%;
+            width: 100%;
+        }
+    }
+}

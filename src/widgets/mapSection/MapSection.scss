@@ -1,0 +1,29 @@
+.map {
+  margin-bottom: 50px;
+  text-align: center;
+  &__subtitle {
+    padding: 8px 0 50px;
+    @include font-styles-ubuntu(
+      null,
+      null,
+      $line-height: var(--line-height-50),
+      $letter-spacing: normal,
+      $font-weight: var(--medium)
+    );
+
+    @include media-mobile {
+      line-height: var(--line-height-24);
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: auto;
+    max-width: 1060px;
+
+    svg {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

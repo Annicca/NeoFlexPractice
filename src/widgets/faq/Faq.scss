@@ -1,0 +1,36 @@
+.faq {
+    margin-top: 30px;
+    @include flex-container-column;
+    gap: 30px;
+
+    &__content {
+        @include flex-container-column;
+        gap: 30px;
+    }
+
+    &__title {
+        @include font-styles-ubuntu(
+            $font-size: var(--font-30),
+            $line-height: var(--line-height-44)
+        );
+    }
+
+    &__item {
+        border: 1px solid  var(--blueF0);
+
+        &:not(:last-child) {
+            border-bottom: none;
+        }
+    }
+}
+
+.question {
+    &__content {
+        padding: 30px;
+        font-weight: var(--regular);
+        color: var(--brown7B);
+    }
+    &__name {
+        padding: 30px;
+    }
+}

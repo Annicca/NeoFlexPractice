@@ -1,0 +1,15 @@
+.confirm-code {
+    margin-top: 104px;
+    @include flex-container-center;
+    flex-direction: column;
+    text-align: center;
+
+    &__title {
+        margin: 0 0 32px;
+        @include font-styles-ubuntu(
+            $font-size: var(--font-30),
+            $font-weight: var(--bold),
+            $line-height: var(--line-height-33)
+        );
+    }
+}

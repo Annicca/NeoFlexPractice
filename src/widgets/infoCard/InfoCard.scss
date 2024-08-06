@@ -1,0 +1,103 @@
+.info-card {
+    @include flex-container;
+    gap: 10px;
+    padding: 48px 117px 48px 32px;
+    margin-top: 20px;
+    background: linear-gradient(180.8deg, var(--blue-grayCB) 34.33%, var(--light-yelow) 64.27%);
+    box-shadow: 0px 2px 4px 0px var(--shadow33), 0px 0px 8px 0px var(--shadow14);
+    border-radius: 28px;
+
+    @media(hover: hover) {
+        &:hover{
+            .info-card__image {
+                transform: rotate(17deg);
+            }
+        }
+    }
+    
+    @include media-tablet {
+        flex-direction: column;
+        padding: 40px;
+        gap: 30px;
+    }
+
+    @include media-mobile {
+        padding: 20px;
+    }
+
+    &__title {
+        margin: 0;
+        padding-bottom: 16px;
+        @include font-styles-ubuntu(
+            $font-size: var(--font-48),
+            $font-weight: var(--bold),
+            $line-height: var(--line-height-48),
+            $letter-spacing: var(--letter-spacing-02),
+            $color: var(--white)
+        );
+
+        @include media-mobile {
+            text-align: center;
+            padding-bottom: 0;
+            font-size: var(--font-24);
+            line-height: var(--line-height-24);
+        }
+    }
+
+    &__description {
+        @include font-styles-ubuntu(
+            $line-height: var(--line-height-18),
+            $letter-spacing: var(--letter-spacing-02),
+            $color: var(--gray48)
+        );
+
+        @include media-mobile {
+            text-align: center;
+            font-size: var(--font-14);
+            line-height: var(--line-height-16);
+        }
+    }
+
+    &__inner {
+        max-width: 650px;
+        @include flex-container-column;
+        align-items: flex-start;
+        gap: 16px;
+
+        @include media-tablet {
+            align-items: center;
+            gap: 20px;
+        }
+    }
+
+    &__image {
+        height: 226px;
+        width: auto;
+        transition: transform .3s linear;
+
+        @include media-mobile {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__conditions {
+        width: 100%;
+        max-width: 613px;
+        @include flex-container-start;
+        column-gap: 12%;
+        row-gap: 20px;
+        padding-bottom: 20px;
+        
+        @include media-tablet {
+            width: 100%;
+            column-gap: normal;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        @include media-mobile {
+            text-align: center;
+        }
+    }
+}

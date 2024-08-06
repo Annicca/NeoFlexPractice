@@ -1,0 +1,38 @@
+.offer {
+    @include flex-container-column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 602px;
+    padding: 32px;
+    background-color: var(--white);
+    box-shadow: 0px 2px 4px 0px var(--shadow33), 0px 0px 8px 0px  var(--shadow14);
+    border-radius: 28px;
+
+    &__text {
+        @include flex-container-center;
+        text-align: center;
+        gap: 0.5em;
+        @include font-styles-ubuntu(
+            $font-weight: var(--medium),
+            $line-height: var(--line-height-18)
+        );
+    }
+
+    &__inner {
+        @include flex-container-column;
+        align-items: center;
+        gap: 32px;
+    }
+
+    &__info {
+        @include flex-container-column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    &__select {
+        padding: 16px 48px;
+        border-radius: 8px;
+    }
+
+}

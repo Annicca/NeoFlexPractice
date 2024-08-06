@@ -1,0 +1,15 @@
+.tooltip-container {
+    cursor: pointer;
+    position: relative;
+    &__content {
+        position: absolute;
+        visibility: hidden;
+        opacity: 0;
+
+        &_open {
+            visibility: visible;
+            opacity: 1;
+            transition: opacity 0.3s linear, transform 0.5s ease-in-out;
+        }
+    }
+}

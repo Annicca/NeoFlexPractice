@@ -1,0 +1,66 @@
+.amount {
+
+    padding: 24px 24px 40px;
+    border: 1px solid var(--blueD5);
+    border-radius: 10px;
+
+    &__current {
+        display: block;
+        padding: 20px 0 10px;
+        @include font-styles-ubuntu(
+            $line-height: var(--line-height-16),
+            $font-weight: var(--medium)
+        );
+    }
+    &__range-container {
+        height: 24px;
+        @include flex-container;
+        align-items: center;
+    }
+
+    &__range {
+        -webkit-appearance: none;
+        appearance: none; 
+        width: 100%;
+        cursor: pointer;
+        outline: none;
+        height: 2px;
+        background: var(--grayFO);
+        background-image: linear-gradient(var(--blueD5), var(--blueD5));
+        background-size: 0 0;
+        background-repeat: no-repeat;
+
+        &::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none; 
+            height: 24px;
+            width: 24px;
+            background-color: var(--blueD5);
+            border-radius: 50%;
+            border: none;
+            transition: .2s ease-in-out;
+        }
+
+        &::-moz-range-thumb {
+            height: 24px;
+            width: 24px;
+            background-color: var(--blueD5);
+            border-radius: 50%;
+            border: none;
+            transition: .2s ease-in-out;
+        }
+    }
+
+    &__final-values {
+        @include flex-container;
+        justify-content: space-between;
+    }
+
+    &__final-text {
+        @include font-styles-ubuntu(
+            $line-height: var(--line-height-16),
+            $font-weight: var(--medium),
+            $color: var(--gray6D)
+        );
+    }
+}

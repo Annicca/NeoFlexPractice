@@ -1,0 +1,7 @@
+.label {
+    @include font-styles-ubuntu(
+        $line-height: var(--line-height-16),
+        $font-weight: var(--medium),
+        $color: var(--black2C)
+    );
+}

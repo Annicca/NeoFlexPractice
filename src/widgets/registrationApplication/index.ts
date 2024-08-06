@@ -1,0 +1,1 @@
+export {RegistrationApplication} from "./RegistrationApplication";

@@ -1,0 +1,22 @@
+.news {
+  margin-bottom: 65px;
+  text-align: center;
+  &__title {
+    color: var(--black);
+  }
+
+  &__subtitle {
+    padding: 8px 0 50px;
+    @include font-styles-ubuntu(
+      null,
+      var(--gray48),
+      $line-height: var(--line-height-50),
+      $letter-spacing: normal,
+      $font-weight: var(--medium)
+    );
+
+    @include media-mobile {
+      line-height: var(--line-height-24);
+    }
+  }
+}

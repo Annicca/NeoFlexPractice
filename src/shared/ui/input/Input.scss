@@ -1,0 +1,50 @@
+.input-container {
+    position: relative;
+    @include flex-container-column;
+    gap: 5px;
+
+    &__input{
+        padding: 12px 40px 12px 16px;
+        border-radius: 6px;
+        border: 1px solid var(--gray8033);
+        background-color: var(--light-yellow-bright);
+        outline: none;
+        @include font-styles-ubuntu(
+            $line-height: var(--line-height-16),
+            $font-weight: var(--regular),
+            $color: var(--black2C)
+        );
+
+        &::placeholder {
+            @include font-styles-ubuntu(
+                $font-size: var(--font-size-14),
+                $line-height: var(--line-height-14),
+                $font-weight: var(--regular),
+                $color: var(--gray80)
+            );
+        }
+
+        &:focus {
+            border: 2px solid var(--blueD5);
+        }
+
+        &.error {
+            border: 2px solid var(--red);
+        }
+    }
+
+    &__state {
+        position: absolute;
+        top: 32px;
+        right: 16px;
+    }
+}
+
+.error-text {
+    color: var(--red);
+    @include font-styles-ubuntu(
+        $line-height: var(--line-height-16),
+        $font-weight: var(--medium),
+        $color: var(--red)
+    );
+}

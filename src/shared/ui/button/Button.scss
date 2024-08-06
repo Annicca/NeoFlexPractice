@@ -1,0 +1,26 @@
+.button {
+  padding: 16px;
+  border-radius: 16px;
+  background-color: var(--blue);
+  color: var(--white);
+  transition: background-color 0.3s ease-in-out;
+
+  &:hover {
+    background-color: var(--blue-gray);
+  }
+
+  &_clear {
+    padding: 0;
+    border-radius: 0;
+    background-color: transparent;
+    &:hover {
+      background-color: initial;
+    }
+  }
+
+  &_error {
+    padding: 11px 27px;
+    border-radius: 8px;
+    background-color: var(--red-opacity);
+  }
+}

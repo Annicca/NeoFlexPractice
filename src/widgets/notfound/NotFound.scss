@@ -1,0 +1,59 @@
+.not-found {
+    @include flex-container;
+
+    @include media-tablet {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__info {
+        @include flex-container-column;
+        row-gap: 32px;
+
+        @include media-tablet {
+            align-items: center;
+        }
+    }
+
+    &__title {
+        @include font-styles-ubuntu(
+            $font-size: var(--font-30),
+            $font-weight: var(--bold),
+            $line-height: var(--line-height-33),
+            $color: var(--black1E)
+        );
+
+        &_light {
+            font-weight: var(--medium),
+        }
+    }
+
+    &__text {
+        @include font-styles-ubuntu(
+            $font-size: var(--font-16),
+            $font-weight: var(--medium),
+            $line-height: var(--line-height-18),
+            $color: var(--gray4B)
+        )
+    }
+
+    &__link {
+        align-self: flex-start;
+        padding: 11px 64px;
+        border-radius: 8px;
+
+        @include media-tablet {
+            margin: 0 auto;
+        }   
+    }
+
+    &__icon svg{
+        
+        @include media-tablet {
+            width: 100%;
+            height: auto;
+            
+        }
+    }
+}
