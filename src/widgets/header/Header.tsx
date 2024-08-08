@@ -1,4 +1,4 @@
-import { FC, useState } from "react";
+import { FC } from "react";
 import { NavLink } from "react-router-dom";
 import { Button, List, ListItem, LogoBank } from "shared/ui";
 import { HEADER_LINKS } from "shared/const";

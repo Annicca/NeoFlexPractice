@@ -16,8 +16,8 @@ export const ChooseCards: FC = () => {
       <List
         className="choose-cards__cards"
         items={CARDS}
-        renderItem={(card) => (
-          <ListItem key={card}>
+        renderItem={(card, index) => (
+          <ListItem key={card + index}>
             <Image src={card} className="choose-cards__card" />
           </ListItem>
         )}
