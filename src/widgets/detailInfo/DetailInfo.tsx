@@ -7,7 +7,7 @@ import "./DetailInfo.scss";
 
 export const DetailInfo = () => {
     return (
-        <section className="detail-info">
+        <section className="detail-info" data-testid = "detail-tab">
             <TabList activeTabIndex={0}>
                 <Tab label="Аbout card">
                     <AboutCard />

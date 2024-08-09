@@ -1,5 +1,5 @@
 import { FC, useEffect, useRef, useState } from "react";
-import { useNews } from "shared/lib/hooks/useNews";
+import { useNews } from "shared/lib";
 import { lib } from "shared/lib";
 import { TNews } from "shared/types";
 import { ArrowSliderIcon, Button, List, ListItem } from "shared/ui";
@@ -15,9 +15,11 @@ export const ListNews: FC = () => {
   const [step, setStep] = useState(0);
 
   const handleStepSlider = () => {
-    const sliderStep = lib.getStep(sliderRef.current, news.length);
-    if (sliderStep) {
-      setStep(sliderStep);
+    if(news) {
+      const sliderStep = lib.getStep(sliderRef.current, news.length);
+      if (sliderStep) {
+        setStep(sliderStep);
+      }
     }
   };
 
@@ -36,6 +38,7 @@ export const ListNews: FC = () => {
       <List
         className="news-slider__list"
         ref={sliderRef}
+        data-testid = "slider-news"
         onScroll={() =>
           lib.onScroll(
             sliderRef.current,
@@ -46,13 +49,14 @@ export const ListNews: FC = () => {
         }
         items={news}
         renderItem={(item: TNews) => (
-          <ListItem key={item.title}>
+          <ListItem key={item.title} data-testid='news'>
             <NewsItem news={item} />
           </ListItem>
         )}
       />
       <div className="news-slider__buttons">
         <Button
+          role = "prev"
           mode="clear"
           className="news-slider__button news-slider__button_prev news-slider__button_disabled"
           ref={prevBtnRef}
@@ -61,6 +65,7 @@ export const ListNews: FC = () => {
           <ArrowSliderIcon className="news-slider__btn-icon" />
         </Button>
         <Button
+          role = "next"
           className="news-slider__button news-slider__button_next"
           ref={nextBtnRef}
           onClick={() => lib.nextScroll(sliderRef.current, step)}

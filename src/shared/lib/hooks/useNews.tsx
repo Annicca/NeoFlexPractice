@@ -4,18 +4,23 @@ import { TNews } from "shared/types";
 import { lib } from "..";
 import { LIMIT_REQUESTS } from "shared/const";
 
-export const useNews = () => {
-  const [news, setNews] = useState<TNews[]>([]);
+export const useNews = (): TNews[] | null => {
+  const [news, setNews] = useState<TNews[] | null>([]);
   const [numberRequest, setNumberRequest] = useState(0);
 
   const filterNews = useMemo(() => {
-    return news.filter((item) => {
-      return (
-        lib.getIsValidImgUrl(item.urlToImage) &&
-        lib.getIsNotRemovedDescription(item.description) &&
-        lib.getIsNotHTML(item.description)
-      );
-    });
+    if(news) {
+      return news.filter((item) => {
+        return (
+          lib.getIsValidImgUrl(item.urlToImage) &&
+          lib.getIsNotRemovedDescription(item.description) &&
+          lib.getIsNotHTML(item.description)
+        );
+      });
+    } else {
+      return null
+    }
+    
   }, [news]);
 
   if (numberRequest === LIMIT_REQUESTS) return filterNews;
@@ -24,6 +29,8 @@ export const useNews = () => {
     newsApi.getNews().then((news) => {
       if (news) {
         setNews(news);
+      } else {
+        setNews(null)
       }
     });
   }, []);
