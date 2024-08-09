@@ -22,9 +22,10 @@ export const ChooseOffer = () => {
         }
     }
 
-    if(!offers) return
+    if(!offers) return  <div data-testid = "offers">Sorry no offers</div>
     return (
         <List 
+            data-testid = "offers"
             className="offers"
             items={offers}
             renderItem={(item, index) => <ListItem key={item.monthlyPayment + index} className="offers__item"><Offer isLoading = {loading} offer={item} onChoose={onChooseOffer}/></ListItem>}
