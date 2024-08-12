@@ -21,7 +21,7 @@ export const SelectAmount:FC<TSelectAmout> = forwardRef<HTMLInputElement, TSelec
     return(
         <div className="amount">
             <Label htmlFor={props.name} >Select amount</Label>
-            <input type="number" className="amount__current" value={amount} onChange={setAmount} min={min} max={max}/>
+            <input type="number" className="amount__current" value={amount} onChange={setAmount} min={min} max={max} role = "textbox"/>
             <div className="amount__range-container">
                 <input type="range" style = {{backgroundSize: ((amount - min) * 100 / (max - min)) + '% 100%'}} className={classNames("amount__range", className)} ref = {ref} min={min} max={max} {...inputProps}/>
             </div>

@@ -9,6 +9,7 @@ export const ErrorIcon: FC<TIcon> = ({
 }) => {
   return (
     <svg 
+        data-testid ="error-icon"
         width={width}
         height={height}
         className={className}

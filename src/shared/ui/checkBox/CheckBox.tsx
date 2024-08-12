@@ -9,11 +9,10 @@ type TCheckBoxProps = InputHTMLAttributes<HTMLInputElement> & {
     label?: string,
     error?: FieldError | undefined,
     classNameContainer?: string;
-    isRequired?: boolean;
 }
 
 export const CheckBox:FC<TCheckBoxProps> = forwardRef<HTMLInputElement, TCheckBoxProps>((props, ref) => {
-    const {classNameContainer, label, error, isRequired, ...inputProps} = props
+    const {classNameContainer, label, error, ...inputProps} = props
     return(
         <div className = "checkbox-wrapper">
             <Label className={classNames("checkbox-container", classNameContainer)}>{label}

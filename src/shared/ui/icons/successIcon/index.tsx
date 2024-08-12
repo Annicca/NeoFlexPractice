@@ -8,7 +8,8 @@ export const SuccessIcon: FC<TIcon> = ({
   fillColor,
 }) => {
   return (
-    <svg       
+    <svg     
+        data-testid ="success-icon"  
         width={width}
         height={height}
         className={className}

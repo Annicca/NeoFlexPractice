@@ -4,7 +4,6 @@ import { ListNews } from 'features';
 import { TNews } from 'shared/types';
 import * as hooks from "shared/lib";
 
-// Тестовые данные
 const mockData: TNews[] = [
     {
         urlToImage: 'urlImage4',
@@ -42,7 +41,7 @@ jest.mock('react-router-dom', () => ({
 describe('ListNews', () => {
     
     afterEach(() => {
-        cleanup(); // Очищает DOM после каждого теста
+        cleanup();
     });
 
     test('renders slider', () => {
@@ -51,11 +50,9 @@ describe('ListNews', () => {
 
         render(<ListNews />); 
 
-        // Проверяем, что на странице рендерится список с количеством элементов, равным mockData.length
         const listItems = screen.getAllByTestId('news');
         expect(listItems.length).toBe(mockData.length);
-    
-        // Проверяем, что данные элемента соответствуют данным из mockData
+
         mockData.forEach((item, index) => {
             expect(listItems[index]).toHaveTextContent(item.title || "not title");
 
@@ -84,8 +81,6 @@ describe('ListNews', () => {
         jest.spyOn(hooks, 'useNews').mockImplementation(() => []);
 
         render(<ListNews />); 
-    
-        // Дополнительная проверка (например, на наличие сообщения о пустом списке)
         expect(screen.getByText('Loading...')).toBeInTheDocument(); 
       });
 });

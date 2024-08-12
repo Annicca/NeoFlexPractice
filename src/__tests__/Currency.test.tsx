@@ -67,7 +67,6 @@ describe('ListCurrency', () => {
 
         render(<ListCurrency />); 
     
-        // Дополнительная проверка (например, на наличие сообщения о пустом списке)
         expect(screen.getByText('Loading...')).toBeInTheDocument(); 
       });
 });

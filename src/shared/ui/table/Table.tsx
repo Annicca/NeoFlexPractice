@@ -27,9 +27,9 @@ export const Table = <T extends object,>(props: TTableProps<T>) => {
             <List 
                 className={classNames("table-row", classNameRow)}
                 items={columns}
-                renderItem={(columnName) => <ListItem className={classNameColumnHeader} key={columnName.value.toString()}>
+                renderItem={(columnName) => <ListItem className={classNameColumnHeader} key={columnName.value.toString()} data-testid = "header-col">
                     {isSortable ? 
-                        <TableHeader sortedConfig = {sortedConfig} setSort = {onColumnHeaderClick} columnName={columnName}/> : 
+                        <TableHeader sortedConfig = {sortedConfig} setSort = {onColumnHeaderClick} columnName={columnName} /> : 
                         columnName.label
                     }
                 </ListItem>}
@@ -39,7 +39,7 @@ export const Table = <T extends object,>(props: TTableProps<T>) => {
                 renderItem={(item: T, index) => 
                     <ListItem
                         key={Object.keys(item)[0]+index}
-                        
+                        data-testid = "row"
                     >
                         <List 
                             className={classNames("table-row", classNameRow)}
