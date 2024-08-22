@@ -24,7 +24,7 @@ export const ListCurrency = () => {
         className="currency-list"
         items={isShowAll ? currencies : currencies.slice(0, 6)}
         renderItem={(item: TCurrency) => (
-          <ListItem key={item.name}>
+          <ListItem key={item.name} data-testid='currency'>
             <CurrencyItem {...item} />
           </ListItem>
         )}

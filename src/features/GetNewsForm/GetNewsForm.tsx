@@ -25,7 +25,7 @@ export const GetNewsForm = () => {
   if(isSubscribed) return <div>You are already subscribed to the bank's newsletter</div>
 
   return (
-    <form onSubmit={(event) => onSubmit(event)} className="form-email">
+    <form onSubmit={(event) => onSubmit(event)} name="form-email" className="form-email">
       <EmailInput ref={emailRef} />
     </form>
   );

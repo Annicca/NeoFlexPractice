@@ -10,12 +10,12 @@ import {
 const HomePage = () => {
     return (
         <main>
-        <ChooseCards />
-        <YouCanUse />
-        <Currency />
-        <MapSection />
-        <News />
-        <EmailSubscribe />
+            <ChooseCards />
+            <YouCanUse />
+            <Currency />
+            <MapSection />
+            <News />
+            <EmailSubscribe />
         </main>
     );
 };

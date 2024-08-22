@@ -6,7 +6,7 @@ import "./ButtonApply.scss";
 
 export const ButtonApply = () => {
     const statusApplcation = useStatusApplication();
-    console.log(statusApplcation)
+
     return(
         <Button className="btn-apply" onClick={() => lib.scrollTo("#form")}>
             {statusApplcation ? STATUS_APPLICATION[statusApplcation] : "Apply for card"}

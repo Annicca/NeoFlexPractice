@@ -5,7 +5,7 @@ import "./Divider.scss";
 type TDividerProps = {
   orientation?: 'horizontal' | 'vertical';
   position?: "left" | "right" | "top" | "bottom";
-  mode: "dashed" | "solid" | "dotted";
+  mode?: "dashed" | "solid" | "dotted";
   color?: string;
   size?: number;
   classNameContainer?: string;

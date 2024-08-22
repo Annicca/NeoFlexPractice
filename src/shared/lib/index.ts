@@ -34,7 +34,7 @@ const enabledBtn = (btn: HTMLElement) => {
 };
 
 const nextScroll = (slider: HTMLElement | null, step: number) => {
-  slider?.scrollBy(step, 0);
+  slider && slider.scrollBy(step, 0);
 };
 
 const prevScroll = (slider: HTMLElement | null, step: number) => {

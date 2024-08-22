@@ -46,7 +46,7 @@ export const StepFirstPrescoring = () => {
     }
 
     return(
-        <form className="prescoring" onSubmit={handleSubmit(onSubmit)}>
+        <form data-testid = "prescoring" className="prescoring" onSubmit={handleSubmit(onSubmit)}>
             <PrescoringAmount register={register} amount={getAmount} handleAmount = {setAmount}/>
             <div className="prescoring__contact">
                 <div className="prescoring__subtitle">Contact Information</div>

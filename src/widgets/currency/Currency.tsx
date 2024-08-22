@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { lib } from "shared/lib";
 import { ListCurrency } from "features";
-import { BankIcon, Button } from "shared/ui";
+import { BankIcon } from "shared/ui";
 import "./Currency.scss";
 import classNames from "classnames";
 
